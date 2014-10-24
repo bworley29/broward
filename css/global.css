@@ -528,7 +528,7 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  font-family: "freight-text-pro";
+  font-family: "Merriweather", serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -752,7 +752,7 @@ body#tinymce h1, body#tinymce h2, body#tinymce h3, body#tinymce h4, body#tinymce
 
 table.BBFormTable {
   width: 90%;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   border: 0;
   background: transparent;
   margin-left: 0;
@@ -827,10 +827,10 @@ table.BBFormTable.PostJobFormTable {
   overflow: auto; }
 
 .BBCalendarWeekendDay {
-  border: 1px solid #000; }
+  border: 1px solid #4f4f4f; }
 
 .BBCalendarDay {
-  border: 1px solid #000; }
+  border: 1px solid #4f4f4f; }
 
 .ReportInformationCell {
   height: 150px;
@@ -973,7 +973,7 @@ table.BBFormTable.PostJobFormTable {
   width: 300px; }
 
 .BBCalendar {
-  border-color: #000; }
+  border-color: #4f4f4f; }
 
 .BBCalendar:active {
   color: #47bddb; }
@@ -1039,7 +1039,7 @@ table.BBFormTable.PostJobFormTable {
   font-weight: 700; }
 
 .BBFormValidatorSummary {
-  color: #000;
+  color: #4f4f4f;
   text-align: left;
   background: #efefef;
   padding: .5rem; }
@@ -1047,7 +1047,7 @@ table.BBFormTable.PostJobFormTable {
     margin: 0 !important;
     padding: 0 auto !important; }
     .BBFormValidatorSummary ul li {
-      font-size: 1.0625rem;
+      font-size: 0.875rem;
       color: red; }
 
 .BBListingHeading {
@@ -1055,14 +1055,14 @@ table.BBFormTable.PostJobFormTable {
 
 .BBMessage {
   font-style: italic;
-  font-size: 1.0625rem;
-  line-height: 1.4375rem; }
+  font-size: 0.875rem;
+  line-height: 1.5rem; }
 
 .PagedListFooter {
   background-color: transparent;
   font-weight: 400;
-  font-size: 1.0625rem;
-  line-height: 1.4375rem; }
+  font-size: 0.875rem;
+  line-height: 1.5rem; }
 
 .PagedListFooterLink:hover {
   color: #47bddb;
@@ -1112,7 +1112,7 @@ table.BBFormTable.PostJobFormTable {
   font-weight: 700; }
 
 .SpellSuggestionList {
-  border: 1px solid #000;
+  border: 1px solid #4f4f4f;
   height: auto;
   width: 100%; }
 
@@ -1164,7 +1164,7 @@ table.BBFormTable.PostJobFormTable {
 .ModalEditFromSavingMessage {
   background-color: #FF9;
   visibility: visible;
-  color: #000;
+  color: #4f4f4f;
   vertical-align: middle; }
 
 .BBPager {
@@ -1652,7 +1652,7 @@ table.BBFormTable.EventTable {
 
 .DiscussionGroupHeadingCell {
   background-color: #fff;
-  color: #000;
+  color: #4f4f4f;
   padding: .25em .5em;
   width: 100%; }
 
@@ -1739,7 +1739,7 @@ table.BBFormTable.EventTable {
 
 .DiscussionTopicFieldValue, .DiscussionReplyFieldValue {
   text-align: left;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   display: inline-block; }
 
 [id*="lblMessage"].DiscussionTopicFieldValue {
@@ -1754,14 +1754,14 @@ table.BBFormTable.EventTable {
 
 .DiscussionTopicList {
   background-color: transparent;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
   .DiscussionTopicList td {
     padding: 0 .5rem; }
 
 .DiscussionTopicTable td {
   padding: 0 .5rem; }
   .DiscussionTopicTable td a {
-    font-size: 1.0625rem; }
+    font-size: 0.875rem; }
 
 .DiscussionTopicSepHR {
   width: 95%; }
@@ -1841,10 +1841,10 @@ input[type="button"].BBFormSubmitButton.DiscussionGroupSpellButton {
 .DiscussionThreadList {
   background-color: transparent; }
   .DiscussionThreadList a {
-    font-size: 1.0625rem; }
+    font-size: 0.875rem; }
 
 .DiscussionTopicNumReplies {
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .BBDocumentDisplayNew {
   color: red; }
@@ -2017,7 +2017,7 @@ input[id*="btnSearch"].BBFormSubmitButton.JobBoardSubmitButton {
   padding-top: 15px;
   vertical-align: bottom;
   width: 100%;
-  border-bottom: 1pt solid #000; }
+  border-bottom: 1pt solid #4f4f4f; }
 
 .BBMembershipSummaryActionCaption {
   height: 30px;
@@ -2165,7 +2165,7 @@ a.ChannelStoryEditButtonWAI {
 .SurveyResponseResultsBar {
   height: 5px;
   background-color: green;
-  border-right: 1px solid #000; }
+  border-right: 1px solid #4f4f4f; }
 
 .SurveyAnswerTableHeaderRow {
   background-color: #a9a9a9; }
@@ -2236,13 +2236,13 @@ table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarBut
   content: '\f14d'; }
 
 a.EventCalendarButtons {
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .ListViewDateLabel {
   height: 17px; }
 
 .ListViewEventItemContainer {
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .CalendarViewMonthYearLabel {
   height: 17px; }
@@ -2252,7 +2252,7 @@ a.EventCalendarButtons {
   color: #fff;
   height: 1px;
   font-weight: 400;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .CalendarViewOtherMonthDay {
   border: 1px solid #d6d6d6;
@@ -2299,7 +2299,7 @@ a.EventCalendarButtons {
 .CalendarViewToday {
   border: 1px solid #47bddb;
   background-color: #47bddb;
-  color: #000;
+  color: #4f4f4f;
   font-weight: 700;
   width: 3%; }
 
@@ -2370,7 +2370,7 @@ table[id*="CalendarEvent1_rblMapLink"] input[type="radio"] + label {
     font-weight: 700; }
 
 .bbAthMgrLocationAddLink {
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .defaultSkin ul.ribbon_tab_btn {
   padding: 3px 0 0 15px !important; }
@@ -2409,10 +2409,10 @@ table[id*="CalendarEvent1_rblMapLink"] input[type="radio"] + label {
 .CalendarViewContainer {
   width: 100%; }
   .CalendarViewContainer select {
-    font-size: 1.0625rem; }
+    font-size: 0.875rem; }
 
 .CalendarViewCalendarContainer td {
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   padding: 0 0.45em; }
 
 td[id*="EventCalendar1_TDGo"] {
@@ -2440,7 +2440,7 @@ td[id*="EventCalendar1_TDGo"] {
 .CalendarViewTopRight {
   width: 35%;
   text-align: right;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   vertical-align: bottom;
   padding-bottom: .5em !important; }
 
@@ -2460,11 +2460,11 @@ table.BBFormTable[summary="Event Calendar"] a[id*="lbtnFilterEvents"]:hover::bef
 
 .CalendarViewTodayText {
   white-space: nowrap;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .CalendarViewBottomIcons {
   text-align: right;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .CalendarFilterSaveContainer {
   text-align: right; }
@@ -2496,7 +2496,7 @@ table.BBFormTable[summary="Event Calendar"] a[id*="lbtnFilterEvents"]:hover::bef
 
 .CalendarFormOptionalText {
   vertical-align: top;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   display: inline-block;
   padding: 7px 0 0 5px; }
 
@@ -2514,7 +2514,7 @@ table.BBFormTable[summary="Event Calendar"] a[id*="lbtnFilterEvents"]:hover::bef
 .EventCalendarButtonBar {
   height: auto;
   padding: .5em 0 1.5em;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   text-align: left; }
   .EventCalendarButtonBar input[id*="ImageButtonNewEvent"].vaMiddle {
     margin-left: .5em; }
@@ -2564,7 +2564,7 @@ table.BBFormTable .BBFieldCaption.DetailLeft {
   padding: 0.45em 0.45em 0.45em 0;
   text-align: right;
   vertical-align: top;
-  line-height: 1.4375rem; }
+  line-height: 1.5rem; }
 table.BBFormTable .DetailEventDetails {
   border-bottom: solid 1px #DCDCDC;
   background: #47bddb;
@@ -2575,7 +2575,7 @@ table.BBFormTable .BBFieldControlCell.DetailRight {
   padding: 0.45em 0.45em 0.45em 0;
   text-align: left;
   vertical-align: top;
-  line-height: 1.4375rem; }
+  line-height: 1.5rem; }
 
 table.BBListingTable {
   border: 0; }
@@ -2792,7 +2792,7 @@ table.BBFormTable.ListViewContainer {
   text-align: right;
   padding-right: 5px;
   padding-left: 10px;
-  color: #000; }
+  color: #4f4f4f; }
 
 .PageSharingControlCell {
   margin-left: 140px;
@@ -2903,7 +2903,7 @@ table.BBFormTable.ListViewContainer {
   font-weight: 700;
   padding: 1px;
   margin: 2px;
-  border: 1px solid #000; }
+  border: 1px solid #4f4f4f; }
 
 .ECardPastStep {
   background-color: #47bddb;
@@ -3117,7 +3117,7 @@ table.BBFormTable.TransactionManagerGrid {
   padding: 0.45em;
   cursor: pointer;
   border: none;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   background-color: #686764;
   color: #fff; }
 
@@ -3172,7 +3172,7 @@ table.BBFormTable.TransactionManagerGrid {
   clear: left;
   width: 100%;
   margin-bottom: 10px;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .TransactionManagerSummaryTable {
   width: 100%; }
@@ -3273,7 +3273,7 @@ table.BBFormTable.TransactionManagerGrid {
   float: left;
   margin: 0;
   margin-bottom: 10px;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .PagerInfo {
   float: left;
@@ -3409,7 +3409,7 @@ table.BBFormTable.TransactionManagerGrid {
 
 .TransactionManagerTab {
   float: left;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   margin: 0 0 0 4px;
   padding: 7px 10px; }
   .TransactionManagerTab a {
@@ -3417,7 +3417,7 @@ table.BBFormTable.TransactionManagerGrid {
     text-decoration: none;
     color: #47bddb;
     cursor: pointer;
-    font-family: "freight-text-pro"; }
+    font-family: "Merriweather", serif; }
 
 .TransactionManagerCurrentTab {
   background-color: #fff;
@@ -3433,7 +3433,7 @@ table.BBFormTable.TransactionManagerGrid {
     text-decoration: none;
     color: #47bddb;
     cursor: pointer;
-    font-family: "freight-text-pro"; }
+    font-family: "Merriweather", serif; }
 
 .TransactionManagerCurrentTabLink {
   color: #47bddb; }
@@ -3506,7 +3506,7 @@ table.BBFormTable.TransactionManagerGrid {
 .BBFormDisplayTextContainer {
   padding: 5px;
   overflow: auto;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .BBFormDisplayDropdownContainer {
   padding: 5px; }
@@ -3713,8 +3713,8 @@ input[type="text"].BBFormDisplayTextbox {
   background-color: transparent;
   white-space: normal;
   word-wrap: break-word;
-  color: #000;
-  font-size: 1.0625rem !important;
+  color: #4f4f4f;
+  font-size: 0.875rem !important;
   border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -3766,7 +3766,7 @@ input[type="button"].BBEventRegSequenceMapNavigationPreviousButton {
 .BBEventRegSequenceMapContentContainer {
   width: 100%;
   margin-left: 0;
-  line-height: 1.4375rem; }
+  line-height: 1.5rem; }
 
 .BBEventRegSequenceMapNavigationContainer {
   clear: right; }
@@ -3776,7 +3776,7 @@ input[type="button"].BBEventRegSequenceMapNavigationPreviousButton {
 
 .Ev2_SummaryRow {
   display: table-row;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .Ev2_SummaryCell {
   display: table-cell;
@@ -3958,12 +3958,12 @@ select.Ev2_RegistrantAddressControlDropDown {
   padding: 0 0 .5em; }
 
 .Ev2_RegistrantLink a {
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   font-weight: 400;
   text-decoration: none;
   color: #47bddb;
   cursor: pointer;
-  font-family: "freight-text-pro"; }
+  font-family: "Merriweather", serif; }
 
 .Ev2_DidYouMeanToRegisterAs {
   margin-left: 10px; }
@@ -4082,10 +4082,10 @@ select.Ev2_RegistrantAddressControlDropDown {
 .Ev2_RegistrationEventTime {
   display: block;
   width: auto;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  color: #000; }
+  color: #4f4f4f; }
   .Ev2_RegistrationEventTime::before {
     content: '\f017';
     font-family: FontAwesome;
@@ -4137,7 +4137,7 @@ select.Ev2_RegistrantAddressControlDropDown {
   width: 97%;
   margin: 1.5em 0 0;
   padding: 0;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
   .Ev2_DescriptionContainer div[id*="ctlDescription"] {
     display: inline-block; }
     .Ev2_DescriptionContainer div[id*="ctlDescription"]:before {
@@ -4164,7 +4164,7 @@ select.Ev2_RegistrantAddressControlDropDown {
     color: #fff;
     font-weight: bold;
     font-weight: 400;
-    font-size: 1.0625rem; }
+    font-size: 0.875rem; }
 
 .Ev2_PriceTypesCell {
   display: table-cell;
@@ -4174,9 +4174,9 @@ select.Ev2_RegistrantAddressControlDropDown {
   padding: .45em 1rem;
   white-space: normal;
   line-height: 1.3;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   font-weight: 700;
-  color: #000; }
+  color: #4f4f4f; }
   .Ev2_PriceTypesCell span[id*="lblPrice"] {
     position: relative;
     display: block;
@@ -4189,11 +4189,11 @@ select.Ev2_RegistrantAddressControlDropDown {
   margin: 0 !important; }
 
 .AdditionalDonation_Error {
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .AdditionalDonation_Currency {
   margin-left: 5px !important;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 input.AdditionalDonation_Amount {
   display: inline-block !important;
@@ -4204,8 +4204,8 @@ input.AdditionalDonation_Amount {
   background-color: #fff; }
   .Ev2_PriceTypesRow .Ev2_PriceTypesCell {
     font-weight: 400;
-    font-size: 1.0625rem;
-    color: #000;
+    font-size: 0.875rem;
+    color: #4f4f4f;
     border-bottom: 1px solid #dddddd; }
     .Ev2_PriceTypesRow .Ev2_PriceTypesCell .Ev2_PriceCount {
       font-weight: 300; }
@@ -4225,7 +4225,7 @@ input.AdditionalDonation_Amount {
 .Ev2_PriceTypeQtyColumn input[id*="txtQty"][type="text"] {
   width: 30px;
   text-align: center;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   padding: 3% 3% 1%; }
 
 .Ev2_PriceTypeValidatorColumn {
@@ -4236,8 +4236,8 @@ label.Ev2_PriceName.BBFieldCaption {
   font-weight: 400;
   text-align: center;
   padding: 0;
-  font-family: "freight-text-pro";
-  line-height: 1.4375rem; }
+  font-family: "Merriweather", serif;
+  line-height: 1.5rem; }
   label.Ev2_PriceName.BBFieldCaption label.Ev2_PriceTypesCell {
     font-weight: 300; }
 
@@ -4262,7 +4262,7 @@ label.Ev2_PriceName.BBFieldCaption {
   float: left; }
   .Ev2_SummaryContainer .Ev2_SummaryHeader {
     display: block;
-    color: #000;
+    color: #4f4f4f;
     background: transparent;
     padding: 0.45em;
     line-height: 1;
@@ -4326,7 +4326,7 @@ label.Ev2_PriceName.BBFieldCaption {
 
 .Ev2_RegistrationStepContainer {
   margin: 0;
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .Ev2_PriceDescriptionCell {
   display: block;
@@ -4671,7 +4671,7 @@ table.DirectoryFormTable {
   width: 80%; }
 
 a.DiscussionGroupNewTopicButtonWAI {
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 .wsNowrap.BBFieldControlCell.sDonationCaptureFieldControlCell > table[style] {
   margin-left: 0 !important;
@@ -4750,7 +4750,7 @@ table.BBFormTable.SearchFormTable {
       content: '\f0a9';
       font-family: FontAwesome;
       display: inline-block;
-      color: #000;
+      color: #4f4f4f;
       text-decoration: none;
       padding-left: .45em; }
 
@@ -4872,7 +4872,7 @@ a.skip:hover, a.skip:active, a.skip:focus {
                      ::4.1 Utility Navigation
 ----------------------------------------------*/
 .utility {
-  font-family: "Lato"; }
+  font-family: "Oswald", sans-serif; }
   .utility article:first-child ul li a {
     color: #efede9;
     font-size: 0.75rem;
@@ -4882,7 +4882,7 @@ a.skip:hover, a.skip:active, a.skip:focus {
     text-transform: capitalize;
     border: 0;
     font-weight: 700;
-    font-family: "Lato"; }
+    font-family: "Oswald", sans-serif; }
     .utility ul li a:hover {
       text-decoration: none;
       border: 0; }
@@ -4932,7 +4932,7 @@ nav.wrapNav ul.mainNav {
         padding: 0;
         border: 0; }
         nav.wrapNav ul.mainNav li ul li a {
-          color: #000;
+          color: #4f4f4f;
           font-weight: 400;
           font-size: 0.875rem;
           line-height: 1;
@@ -4944,7 +4944,7 @@ nav.wrapNav ul.mainNav {
           background: #ccc;
           text-transform: none; }
           nav.wrapNav ul.mainNav li ul li a:hover {
-            color: #000;
+            color: #4f4f4f;
             text-decoration: underline; }
         nav.wrapNav ul.mainNav li ul li ul {
           display: none; }
@@ -5012,7 +5012,7 @@ nav.wrapNav ul.mainNav {
         float: left;
         margin: 0; }
         nav.wrapNav ul.mainNav li a {
-          color: #000;
+          color: #4f4f4f;
           background: transparent;
           width: 100%;
           display: block;
@@ -5045,7 +5045,7 @@ nav.wrapNav ul.mainNav {
     margin: 0;
     padding: 0; }
     .wrapContent nav.breadcrumbs ul li a {
-      font-family: "Lato";
+      font-family: "Oswald", sans-serif;
       font-size: 0.75rem;
       font-weight: 900;
       line-height: 0.6875rem;
@@ -5086,7 +5086,7 @@ aside nav ul.mainNav {
       padding: 2px 0;
       font-size: 0.8125rem;
       font-weight: 400;
-      font-family: "Lato";
+      font-family: "Oswald", sans-serif;
       line-height: 0.975rem;
       display: none; }
       aside nav ul.mainNav li a:hover, aside nav ul.mainNav li a.selected {
@@ -5130,7 +5130,7 @@ aside nav ul.mainNav li.selected a.selected {
   color: #fff;
   font-size: 1.125rem;
   font-weight: 700;
-  font-family: "Lato"; }
+  font-family: "Oswald", sans-serif; }
   .toggleMainNav:after {
     content: '\f0c9';
     font-family: FontAwesome;
@@ -5271,24 +5271,24 @@ footer ul.socialIcons {
   margin-top: 0; }
 
 footer ul.socialIcons li a:before {
-  background-color: #000;
+  background-color: #4f4f4f;
   border: 1px solid #ccc; }
 
 footer ul.socialIcons li a:hover:before {
   background-color: #ccc;
-  color: #000; }
+  color: #4f4f4f; }
 
 /*=========================================================================================
                      ::5. TEXT
 ==========================================================================================*/
 body {
-  color: #000;
-  line-height: 1.4375rem;
+  color: #4f4f4f;
+  line-height: 1.5rem;
   font-size: 100%;
-  font-family: "freight-text-pro"; }
+  font-family: "Merriweather", serif; }
 
 #wrapContent section[role="content"], .LoginLink {
-  font-size: 1.0625rem; }
+  font-size: 0.875rem; }
 
 /*---------------------------------------------
                      ::5.1 Headers
@@ -5306,14 +5306,14 @@ h6 {
   color: #000;
   line-height: normal;
   text-align: left;
-  font-family: "freight-text-pro"; }
+  font-family: "Merriweather", serif; }
 
 h1, *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.LoginSectionHeader, *.DonationListingHeading, *.DonationCaptureListingHeading, *.EventSectionHeader, *.FRDonorListSetCaption, *.FRCommentsFieldSet .FRFieldSetCaption, *.ECardWizardHeading, *.UpcomingEventTitle, *.RecentEventTitle, *.SearchFormTable .SearchFormTitle, *.CHFormTitle, *.NCC_Forms_Title, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.PostChannelStoryFormTitle, *.ReportsLandingTable caption, *.JobResultsHeading, *.ClassPageHeaderClassName, *.UPMPartEditToolbarTitle, *.myHomeBox th, .Ev2_TitleLabel, .Ev2_RegistrationEventTitle, .DiscussionGroupFormTitle, .EventItemTitleName, .SummaryGridEventTitle, .NewsChannelItemTitle, .EventCalendarPartContainer .DetailEventTitle, *.LoginSectionHeader, .DonorGrantListingHeading, .headerOneStyle {
   font-weight: 400;
   font-style: italic;
   font-size: 2rem;
   color: #000;
-  font-family: "freight-text-pro";
+  font-family: "Merriweather", serif;
   display: block;
   line-height: 2.125rem;
   margin: 1.875rem 0 0;
@@ -5343,7 +5343,7 @@ h2, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.DonationListingHeadi
   padding-top: 15px;
   text-transform: uppercase !important;
   background: inherit;
-  font-family: "Lato";
+  font-family: "Oswald", sans-serif;
   height: auto; }
 
 /*
@@ -5366,7 +5366,7 @@ h3 {
   font-size: 0.75rem;
   font-weight: 900;
   font-style: normal;
-  font-family: "Lato";
+  font-family: "Oswald", sans-serif;
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -5406,7 +5406,7 @@ a, a:visited, a.LoginLink, a.PhotoLink, a.Album_BackToPhotosLink, a.Album_AlbumN
   text-decoration: none;
   color: #47bddb;
   cursor: pointer;
-  font-family: "freight-text-pro"; }
+  font-family: "Merriweather", serif; }
 
 a h1, a h2, a h3, a h4, a h5, a h6, a p {
   color: #47bddb; }
@@ -5458,9 +5458,9 @@ p, table.BBListingTable p {
   padding: 0;
   margin: 0 0 1.25rem;
   line-height: 1.4375rem;
-  color: #000;
-  font-family: "freight-text-pro";
-  font-size: 1.0625rem;
+  color: #4f4f4f;
+  font-family: "Merriweather", serif;
+  font-size: 0.875rem;
   font-weight: 400;
   white-space: normal; }
 
@@ -5469,7 +5469,7 @@ p, table.BBListingTable p {
   padding: 0; }
 
 .utility p {
-  font-family: "Lato";
+  font-family: "Oswald", sans-serif;
   display: inline-block;
   font-weight: 900;
   text-transform: uppercase;
@@ -5480,7 +5480,7 @@ p, table.BBListingTable p {
     display: block;
     line-height: 1.875rem;
     margin-right: 5px;
-    font-family: "Lato";
+    font-family: "Oswald", sans-serif;
     font-weight: 900;
     font-size: 0.75rem;
     color: #c6c2ba;
@@ -5489,7 +5489,7 @@ p, table.BBListingTable p {
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer a {
   color: #efede9;
-  font-family: "Lato"; }
+  font-family: "Oswald", sans-serif; }
 footer h5 {
   font-weight: 900;
   font-size: 0.6875rem;
@@ -5631,8 +5631,8 @@ ul ul li, ul ol li, ol ol li, ol ul li {
 
 li {
   line-height: 1.90625rem;
-  color: #000;
-  font-family: "freight-text-pro";
+  color: #4f4f4f;
+  font-family: "Merriweather", serif;
   font-size: 1.125rem;
   font-weight: 300; }
 
@@ -5677,7 +5677,7 @@ input[type="submit"], input[type="button"], input.BBFormSubmitButton, button, a.
   height: auto;
   font-size: 0.75em;
   font-weight: 400;
-  font-family: "Lato";
+  font-family: "Oswald", sans-serif;
   padding: 7px 20px 5px;
   text-transform: uppercase;
   text-align: center;
@@ -5707,7 +5707,7 @@ input[type="submit"]:hover, input[type="button"]:hover, input.BBFormSubmitButton
 ----------------------------------------------*/
 input[type="reset"], input[type="submit"][name*="btnCancel"], input[type="button"][value="Previous"], input[value="Cancel"] {
   border: 0;
-  color: #000;
+  color: #4f4f4f;
   background: transparent;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -5723,7 +5723,7 @@ input[type="reset"], input[type="submit"][name*="btnCancel"], input[type="button
   padding-bottom: 0; }
 
 input[type="submit"][name*="btnCancel"]:hover, input[type="button"][value="Previous"]:hover, input[type="submit"][value="Cancel"]:hover {
-  color: #000;
+  color: #4f4f4f;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -5779,11 +5779,11 @@ input[type="text"][class*="Narrow"].DonationTextboxNarrow {
                      ::7.2 Global Form Styles
 ----------------------------------------------*/
 input[type="text"], textarea, .BBFormTextArea, input[type="password"] {
-  color: #000;
-  font-size: 1.0625rem;
-  font-family: "freight-text-pro";
+  color: #4f4f4f;
+  font-size: 0.875rem;
+  font-family: "Merriweather", serif;
   font-weight: 400;
-  line-height: 1.0625rem;
+  line-height: 0.875rem;
   margin-bottom: 0.75rem;
   width: 80%;
   padding: 1.75% 1.25%;
@@ -5812,10 +5812,10 @@ label.QuickSearchFieldCaption {
   display: none !important; }
 
 label, .BBFieldCaption, select.BBFormSelectList {
-  color: #000;
-  font-size: 1.0625rem;
-  font-family: "freight-text-pro";
-  line-height: 1.0625rem; }
+  color: #4f4f4f;
+  font-size: 0.875rem;
+  font-family: "Merriweather", serif;
+  line-height: 0.875rem; }
 
 .BBFieldCaption, .BBFieldCaption label {
   vertical-align: top;
@@ -5848,10 +5848,10 @@ a[id*="DonationCapture1_lnkcsc_help"].BBLinkHelpIcon img {
   vertical-align: middle !important; }
 
 table[id*="tblAmount"] .DonationFieldControlCell {
-  color: #000;
-  font-size: 1.0625rem;
-  font-family: "freight-text-pro";
-  line-height: 1.0625rem; }
+  color: #4f4f4f;
+  font-size: 0.875rem;
+  font-family: "Merriweather", serif;
+  line-height: 0.875rem; }
 
 tr[id*="trOther"] td[id*="tdOther"] {
   vertical-align: top;
@@ -5936,7 +5936,7 @@ span.BBPagerDataResults, span[id$="lblFooter"] {
 
 span.PagedListFooter span, div.BBPager a.BBPagerPageSelectedLink {
   background: #fff;
-  color: #000; }
+  color: #4f4f4f; }
 
 a.PagedListFooterLink:hover, span.PagedListFooter span:hover, span.PagedListFooter a:hover, div.BBPager a:hover {
   background: gray;
@@ -6441,10 +6441,10 @@ table.EventItemsTable .EventItemTitleDescription {
 
 table.EventItemsTable .EventItemTitleTime {
   border: medium none;
-  color: #000;
+  color: #4f4f4f;
   display: block;
   font-family: inherit;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   font-weight: 400;
   padding: 0; }
 
@@ -6460,7 +6460,7 @@ table[id$=tblProgress] {
   padding-left: 20px;
   margin-left: -10px;
   border: 0;
-  color: #000; }
+  color: #4f4f4f; }
 
 .EventProgressCell, .EventProgressCellFuture, .EventProgressCellPast {
   padding: 10px;
@@ -6601,7 +6601,7 @@ a[id*="rpFileList_FileLink"]:before {
   color: #EE2752; }
 
 table[id*="tblDocUpload"] tr[id*="trOriginalFile"] td:last-child {
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   padding: 5px 0 1em; }
 
 .BBDocumentDisplayTable tr > td > hr {
@@ -6619,8 +6619,8 @@ table[id*="tblDocUpload"] tr[id*="trOriginalFile"] td:last-child {
 dl.myHomeProfileDisplay {
   margin: 0;
   padding: 0;
-  font-size: 1.0625rem;
-  line-height: 1.4375rem; }
+  font-size: 0.875rem;
+  line-height: 1.5rem; }
   dl.myHomeProfileDisplay dd {
     margin: 0 0 0.75rem;
     padding: 0; }
@@ -6638,8 +6638,8 @@ dl.myHomeProfileDisplay {
 ul.myHomeProfileLinks {
   margin: 0;
   padding: 0 0 0 .15em !important;
-  font-size: 1.0625rem;
-  line-height: 1.4375rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   list-style: none; }
   ul.myHomeProfileLinks li {
     margin: 0 0 0.75rem;
@@ -6664,9 +6664,9 @@ ul.myHomeProfileLinks {
                      ::13.9 Survey Styles
 ----------------------------------------------*/
 *.SurveySubTitle {
-  font-size: 1.0625rem;
-  line-height: 1.4375rem;
-  color: #000;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #4f4f4f;
   display: block;
   margin-bottom: 0.75rem; }
 
@@ -6680,9 +6680,9 @@ ul.myHomeProfileLinks {
 
 .SurveyQuestionSequence {
   display: block;
-  font-family: "freight-text-pro";
-  font-size: 1.0625rem;
-  color: #000;
+  font-family: "Merriweather", serif;
+  font-size: 0.875rem;
+  color: #4f4f4f;
   background: #eee;
   width: 25px;
   height: 25px;
@@ -6742,7 +6742,7 @@ aside .BBPollsFormTable .BBPollsFormTitle {
     border: 0;
     width: 180px;
     color: #c6c2ba;
-    font: bold 0.8125rem "Lato";
+    font: bold 0.8125rem "Oswald", sans-serif;
     background: transparent url("image/icon_search.png") no-repeat right 50%;
     padding: .5em 20px .5em 10px; }
     .QuickSearchFormTable input.QuickSearchTextbox:focus {
@@ -6758,8 +6758,8 @@ aside .BBPollsFormTable .BBPollsFormTitle {
 
 .DTGrid {
   width: 100%;
-  font-family: "freight-text-pro";
-  font-size: 1.0625rem;
+  font-family: "Merriweather", serif;
+  font-size: 0.875rem;
   font-weight: 400; }
   .DTGrid input[type="text"] {
     max-width: 250px;
@@ -6769,8 +6769,8 @@ aside .BBPollsFormTable .BBPollsFormTitle {
 
 .FSGrid {
   width: 100%;
-  font-family: "freight-text-pro";
-  font-size: 1.0625rem;
+  font-family: "Merriweather", serif;
+  font-size: 0.875rem;
   font-weight: 400; }
   .FSGrid tr:nth-child(even) {
     background-color: #F5F5F5; }
@@ -6787,8 +6787,8 @@ aside .BBPollsFormTable .BBPollsFormTitle {
 div[id*="Details_pnlUserSize"] + b {
   margin-bottom: .75em;
   display: inline-block;
-  font-family: "freight-text-pro";
-  font-size: 1.0625rem; }
+  font-family: "Merriweather", serif;
+  font-size: 0.875rem; }
 
 .FundSummaryFieldControlCell input + label {
   padding-right: 1rem;
@@ -6904,7 +6904,7 @@ input.DonorGrantSubmitButton {
   font-style: italic;
   font-size: 2rem;
   color: #000;
-  font-family: "freight-text-pro";
+  font-family: "Merriweather", serif;
   display: block;
   line-height: 2.125rem;
   padding: 1.25rem 0; }
