@@ -5459,7 +5459,8 @@ h4, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderForm
   font-size: 0.875rem;
   line-height: 1;
   margin-bottom: 1.5625rem;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "Oswald", sans-serif; }
 
 h5, *.DetailEventTitle, *.ListViewEventDate, *.ClassPageHeaderTeacherName, *.ClassPageHeaderTeacherEmail {
   font-size: 0.75rem;
@@ -5490,6 +5491,12 @@ a h1, a h2, a h3, a h4, a h5, a h6, a p {
   color: #47bddb; }
   a h1:hover, a h2:hover, a h3:hover, a h4:hover, a h5:hover, a h6:hover, a p:hover {
     color: #47bddb; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-family: "Oswald", sans-serif; }
+
+a h1, a h2, a h3, a h4, a h5, a h6 {
+  font-family: "Oswald", sans-serif; }
 
 .fc-content a, .fc-content a:visited {
   color: #fff; }

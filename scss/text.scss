@@ -99,6 +99,7 @@ h4, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderForm
   line-height: 1;
   margin-bottom: rem(25);
   font-weight: 700;
+  font-family: $alt-body-font;
 }
 
 h5, *.DetailEventTitle, *.ListViewEventDate, *.ClassPageHeaderTeacherName, *.ClassPageHeaderTeacherEmail {
@@ -134,6 +135,14 @@ a {
 			color: $link-hover-color;
 		}
 	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	a {font-family: $alt-body-font; }
+}
+
+a {
+	h1, h2, h3, h4, h5, h6 {font-family: $alt-body-font; }
 }
 
 .fc-content a, .fc-content a:visited {
