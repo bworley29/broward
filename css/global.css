@@ -4810,13 +4810,10 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
     background-color: #2e5a98; }
     .wrapper.blueBg .container {
       padding-bottom: 64px;
-      margin-bottom: 28px;
-      			/*
-      &:empty {
-      				margin: 0;
-      				padding: 0;
-      			}
-      */ }
+      margin-bottom: 28px; }
+      .wrapper.blueBg .container:empty {
+        margin: 0;
+        padding: 0; }
     .wrapper.blueBg::before {
       content: "";
       height: 4px;
@@ -4838,6 +4835,8 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
     .wrapper.blueBg:empty {
       margin: 0;
       padding: 0; }
+      .wrapper.blueBg:empty:before {
+        display: none; }
 
 .container {
   max-width: 61.25rem;
@@ -4854,14 +4853,29 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 /*---------------------------------------------
                      ::3.2.1 Header
 ----------------------------------------------*/
-.logo {
-  float: left;
-  max-width: 380px; }
-
-.utility {
-  float: right; }
-  .utility .QuickSearchFormTable {
+header {
+  padding-top: 20px; }
+  header .logo {
+    float: left;
+    max-width: 380px; }
+    header .logo h1 {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 380px;
+      height: 66px;
+      margin-bottom: 26px;
+      background: url("../image/logo.png") no-repeat 0 0; }
+      @media (max-width: 47.9375em) {
+        header .logo h1 {
+          width: 100%; } }
+    @media (max-width: 47.9375em) {
+      header .logo {
+        width: 100%; } }
+  header .utility {
     float: right; }
+    header .utility .QuickSearchFormTable {
+      float: right; }
 
 /*---------------------------------------------
                      ::3.2.2 Main Nav
@@ -4898,6 +4912,9 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
         padding: 0; }
       .mainContent article.halfWidth.last {
         margin-right: 0; }
+      @media (max-width: 47.9375em) {
+        .mainContent article.halfWidth {
+          width: 100%; } }
 
 .blueBg article {
   float: left;
@@ -4906,6 +4923,9 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
   width: 23.2317613015%; }
   .blueBg article:last-child {
     margin-right: 0; }
+  @media (max-width: 47.9375em) {
+    .blueBg article {
+      width: 100%; } }
 
 /*---------------------------------------------
                      ::3.2.5 Footer

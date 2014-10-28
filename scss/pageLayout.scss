@@ -74,12 +74,12 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 			padding-bottom: 64px;
 			margin-bottom: 28px;
 			
-			/*
-&:empty {
+
+			&:empty {
 				margin: 0;
 				padding: 0;
 			}
-*/
+
 		}
 		
 		&::before {
@@ -91,6 +91,7 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 		    width: 100%;
 		    z-index: 1;
 		    background: url('../image/bgBlueTopPattern.png') repeat-x center 0 transparent;
+		    
 		}
 		
 		&::after {
@@ -107,6 +108,8 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 		&:empty {
 			margin: 0;
 			padding: 0;
+			
+			&:before {display: none;}
 		}
 		
 	}
@@ -125,15 +128,33 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 /*---------------------------------------------
                      ::3.2.1 Header
 ----------------------------------------------*/
-
-.logo {
-	float: left;
-	max-width: 380px;
-}
-
-.utility {
-	float: right;
-	.QuickSearchFormTable {float: right;}
+header {
+	padding-top: 20px;
+	.logo {
+		float: left;
+		max-width: 380px;
+		
+		h1 {
+			@include imageReplacement;
+			width: 380px;
+			height: 66px;
+			margin-bottom: 26px;
+			background: url('../image/logo.png') no-repeat 0 0;
+			
+			@media (max-width: $small-breakpoint ) {
+				width: 100%;
+			}
+		}
+		
+		@media (max-width: $small-breakpoint ) {
+				width: 100%;
+			}
+	}
+	
+	.utility {
+		float: right;
+		.QuickSearchFormTable {float: right;}
+	}
 }
 
 /*---------------------------------------------
@@ -176,6 +197,10 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 			&:empty {margin: 0; padding: 0;}
 			
 			&.last {@include omega;}
+			
+			@media (max-width: $small-breakpoint ) {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -186,6 +211,10 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 	
 	article {
 		@include span-columns(3);
+		
+		@media (max-width: $small-breakpoint ) {
+				width: 100%;
+			}
 	}
 }
 
