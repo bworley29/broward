@@ -18,7 +18,7 @@ body#BodyId { background: #f3f1e6 url('../image/body.jpg') repeat; }
 $column: 60px;
 $gutter: 40px;
 $grid-columns: 12;
-$max-width: rem(960);
+$max-width: rem(980);
 $small-breakpoint: em(767);
 $large-breakpoint: em(1024);
 $medium-viewport: em(900);
@@ -52,6 +52,69 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
                      ::3.2 Layout
 ----------------------------------------------*/
 
+
+// Wrapper 100% Width.  No Max Width
+.wrapper {
+	position: relative;
+	width: 100%;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	
+	&.nav { background: url('../image/bgMainNav.png') no-repeat center center / 100% auto transparent; }
+	
+	&.breadcrumbs { background:  url(../image/bgBreadcrumbs.png) repeat 0 0 #75736e; }
+	
+	&.blueBg {
+		
+		position: relative;
+		background-color: #2e5a98;
+		
+		.container {
+			padding-bottom: 64px;
+			margin-bottom: 28px;
+			
+			/*
+&:empty {
+				margin: 0;
+				padding: 0;
+			}
+*/
+		}
+		
+		&::before {
+			content: "";
+		    height: 4px;
+		    left: 0;
+		    position: absolute;
+		    top: -4px;
+		    width: 100%;
+		    z-index: 1;
+		    background: url('../image/bgBlueTopPattern.png') repeat-x center 0 transparent;
+		}
+		
+		&::after {
+			content: "";
+		    height: 100%;
+		    left: 0;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    z-index: 2;	
+		    background: url('../image/bgGlow.png') no-repeat center 0 transparent;
+		}
+		
+		&:empty {
+			margin: 0;
+			padding: 0;
+		}
+		
+	}
+	
+}
+
+
+// Container with Max Width
 .container {
 	@include outer-container;
 	position: relative;
@@ -59,9 +122,23 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 }
 
 
-.logo {
+/*---------------------------------------------
+                     ::3.2.1 Header
+----------------------------------------------*/
 
+.logo {
+	float: left;
+	max-width: 380px;
 }
+
+.utility {
+	float: right;
+	.QuickSearchFormTable {float: right;}
+}
+
+/*---------------------------------------------
+                     ::3.2.2 Main Nav
+----------------------------------------------*/
 
 .wrapNav {
 
@@ -71,67 +148,64 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 }
 
 
-.utility {
-		
-	article {
-		
-	}
-	
-	.QuickSearchFormTable {float: right;}
-}
+/*---------------------------------------------
+                     ::3.2.3 Breadcrumbs
+----------------------------------------------*/
 
-
-header {
-	
-	.logo {
-		
-	}
-
-}
 
 .breadcrumbs {
 
 }
 
-.wrapContent {
-	@include span-columns(8);
-	//width: percentage(700px / 960px);
+/*---------------------------------------------
+                     ::3.2.4 Main Content
+----------------------------------------------*/
 
+.mainContent {
+	padding: 28px 0;
 	
+	&:empty {margin: 0; padding: 0;}
+	
+	article {
+		@include span-columns(12);
+		@include omega;
+		&.halfWidth {
+			@include span-columns(6);
+			padding: 28px 0;
 			
-	.mainContent {
-		
+			&:empty {margin: 0; padding: 0;}
+			
+			&.last {@include omega;}
+		}
 	}
-	
 }
 
+// Blue Bg Content
 
+.blueBg {
+	
+	article {
+		@include span-columns(3);
+	}
+}
+
+/*---------------------------------------------
+                     ::3.2.5 Footer
+----------------------------------------------*/
 
 footer {
+    .footer { background-color: #3a3a3f; }
+    .footerAlt { background-color: #fff; }
     
-    address {
-	   
+    address, article {
+	   @include span-columns(4);
     }
     
 }
 
 
-
 /*---------------------------------------------
-                     ::3.3 Flexi Layout
-----------------------------------------------*/
-
-/*---------------------------------------------
-                     ::3.4 Utility Area
-----------------------------------------------*/
-
-
-/*---------------------------------------------
-                     ::3.5 Quick Search
-----------------------------------------------*/
-
-/*---------------------------------------------
-                     ::3.6 Skip Link
+                     ::3.3 Skip Link
 ----------------------------------------------*/
 p.skip {
 height:0;

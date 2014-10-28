@@ -25,10 +25,10 @@ h3, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderForm
 h4, *.DetailEventTitle, *.ListViewEventDate, *.ClassPageHeaderTeacherName, *.ClassPageHeaderTeacherEmail,
 h5, 
 h6 {
-  margin: 0 0 0.875em;
+  margin: 0;
   padding: 0;
   font-weight: 400;
-  color: #000;
+  color: $body-font-color;
   line-height: normal;
   text-align: left;
   font-family: $header-font-family;
@@ -36,17 +36,13 @@ h6 {
 
 h1 , *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.LoginSectionHeader, *.DonationListingHeading, *.DonationCaptureListingHeading, *.EventSectionHeader, *.FRDonorListSetCaption, *.FRCommentsFieldSet .FRFieldSetCaption, *.ECardWizardHeading, *.UpcomingEventTitle, *.RecentEventTitle, *.SearchFormTable .SearchFormTitle, *.CHFormTitle, *.NCC_Forms_Title, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.PostChannelStoryFormTitle, *.ReportsLandingTable caption, *.JobResultsHeading, *.ClassPageHeaderClassName, *.UPMPartEditToolbarTitle, *.myHomeBox th, .Ev2_TitleLabel, .Ev2_RegistrationEventTitle, .DiscussionGroupFormTitle, .EventItemTitleName, .SummaryGridEventTitle, .NewsChannelItemTitle, .EventCalendarPartContainer .DetailEventTitle, *.LoginSectionHeader, .DonorGrantListingHeading, .headerOneStyle {
 	font: {
-		weight:400;
-		style: italic;
-		size: rem(32);
+		weight:900;
+		style: normal;
+		size: rem(48);
 	}
-	color: #000;
-	font-family: $header-font-family;
-	display: block;
-	line-height: rem(34);
-	margin:rem(30) 0 0;
-	padding: rem(20) 0;
-	border-top: 1px solid #c6c2ba;
+	line-height: 1;
+	color: #383838;
+	margin-bottom: 24px;
 }
 
  *.BBFormTitle, *.SurveyTitle, *.ReportTitle, *.NCC_Forms_Title, *.SearchFormTitle, *.EventCalendarName, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.DiscussionGroupFormTitle, *.JobBoardFormTitle, *.EventSectionHeader, *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.CalendarFormLegend, *.DirectoryFormTitle, *.CalendarFormLegend, *.ProfileFormTitle, *.DiscussionGroupHeadingCell, *.BBPollsFormTitle, *.NewsChannelFormTitle, *.FRSectionHeader, .NewsChannelItemTitle, .DonorGrantListingHeading {
@@ -54,10 +50,6 @@ h1 , *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.Logi
     padding: 0 0 rem(20);
   }
 
-.mainContent h1 {
-	
-	&:first-child { border: 0; margin-bottom: 15px; padding: 0; }
-}
 
 .logo h1 {
 	margin: 0;
@@ -87,18 +79,6 @@ h2 , *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.DonationListingHead
 */
 
 
-aside h2 {
-	font-family:'Open Sans Condensed';
-	font-size:rem(20);
-	font-weight:700;
-	line-height: rem(23);
-	letter-spacing:.06em;
-	text-transform:uppercase;
-	border-bottom:1px solid #000;
-	margin-bottom:25px;
-	padding-top: 0;
-}
-
 h3 {
   font: {
   	size: rem(12);
@@ -114,8 +94,6 @@ h3 {
   height: auto;
 }
   
-h3 { margin: 2px 0 4px;} 
-
 h4, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderFormTitle, *.EventItemTitleTime, *.EventItemRegistrationsHeader, *.EventItemRegistrantsEventName,  *.FRSectionHeader, *.FRFieldSetCaption, *.DiscussionGroupHeadingText, *.PostDiscussionReplyHeading, *.PostDiscussionPreviewHeading,  *.SpellHeading, table.ReportFormTable legend, fieldset .CHFormTitle, *.CalendarViewTopMiddle, *.ReportListingHeading, *.NCC_Forms_Subtitle, *.DiscussionTopicSubject, *.OCCHeader, *.ClassPageHeaderPageName, .SurveyQuestion {
   font-size: rem(14);
   line-height: 1;
@@ -247,6 +225,33 @@ p, table.BBListingTable p {
 		padding: 0 3px;
 	}
 }
+
+.blueBg {
+	h1, h2, h3, h4, h5, h6, p, a, li, dd, [class*="icon"] { color: #fff; }
+	
+	[class*="icon"] {
+		font-size: 33px;
+	    height: 33px;
+	    line-height: 45px;
+	    margin-bottom: 15px;
+	    top: 2px;
+	    width: 36px;
+	    color: #a9d1fa;
+	}
+	h2 {
+		display: block;
+		width: 100%;
+		font: {
+			size: rem(48);
+			weight: 700;
+		}
+		line-height: 1;
+		text-align: center;
+		margin: 15px auto;
+		text-transform: uppercase;
+	}
+}
+
 
 footer {
 	h1, h2, h3, h4, h5, h6, p, a {
@@ -412,19 +417,8 @@ li p {
 		}
 }
 
-#wrapContent section[role="content"] ul.socialMediaIcons {
-	list-style: none;
-	display: block;
-	position: relative;
-	width: 100%;
-	
-	li {
-		list-style: none;
-		display: inline-block;
-		position: relative;
-		float: left;
-		padding: 0;
-		margin: 0;
-	}
-}
+// Font Icons
 
+[class*="icon"] {
+	font-family: $icon-font-family;
+}

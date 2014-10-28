@@ -9,10 +9,12 @@
      3. Page Layout and Structure
            3.1 Responsive Grid
 		   3.2 Layout
-           3.3 Flexi Layout
-           3.4 Utility Area
-           3.5 Quick Search
-		   3.6 Skip Link
+			   	3.2.1 Header
+			   	3.2.2 Main Nav
+			   	3.2.3 Breadcrumbs
+			   	3.2.4 Main Content
+			   	3.2.5 Footer
+		   3.3 Skip Link
      4. Menus
            4.1 Global Menu Styles
            4.2 Main Horizontal Navigation
@@ -885,7 +887,7 @@ table.BBFormTable.PostJobFormTable {
     right: -23px;
     top: -16px;
     z-index: 100;
-    font-family: FontAwesome;
+    font-family: "SSPika";
     content: '\f0da';
     color: #47bddb; }
   .BBSequenceMapCurrentStep:last-child::after {
@@ -2209,7 +2211,7 @@ table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarBut
 table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a.EventCalendarButtons {
   margin-left: 1em; }
   table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a.EventCalendarButtons::before {
-    font-family: FontAwesome;
+    font-family: "SSPika";
     display: inline-block;
     color: #EE2752;
     font-size: 1rem;
@@ -2448,7 +2450,7 @@ table.BBFormTable[summary="Event Calendar"] input[id*="ImageButtonFilterEvents"]
   display: none; }
 table.BBFormTable[summary="Event Calendar"] a[id*="lbtnFilterEvents"]::before {
   content: '\f0b0';
-  font-family: FontAwesome;
+  font-family: "SSPika";
   display: inline-block;
   color: #EE2752;
   font-size: 1rem;
@@ -3143,7 +3145,7 @@ table.BBFormTable.TransactionManagerGrid {
 
 [class*="TransactionManagerGridHeaderCellSorted"]::after {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "SSPika";
   color: #eee;
   padding-left: 1em; }
 
@@ -4032,7 +4034,7 @@ select.Ev2_RegistrantAddressControlDropDown {
     margin-left: 0; }
     .Ev2_DateContainer .Ev2_DateLabel::before {
       content: '\f073';
-      font-family: FontAwesome;
+      font-family: "SSPika";
       font-size: 2rem;
       color: #EE2752;
       margin-right: .3em;
@@ -4048,7 +4050,7 @@ select.Ev2_RegistrantAddressControlDropDown {
   margin-left: 0; }
   .Ev2_RegistrationEventDateContainer .Ev2_RegistrationEventDate::before {
     content: '\f073';
-    font-family: FontAwesome;
+    font-family: "SSPika";
     font-size: 2rem;
     color: #EE2752;
     margin-right: 0.35em;
@@ -4072,7 +4074,7 @@ select.Ev2_RegistrantAddressControlDropDown {
   padding: 0; }
   .Ev2_TimeLabels::before {
     content: '\f017';
-    font-family: FontAwesome;
+    font-family: "SSPika";
     font-size: 2rem;
     color: #EE2752;
     margin-right: .3em;
@@ -4088,7 +4090,7 @@ select.Ev2_RegistrantAddressControlDropDown {
   color: #4f4f4f; }
   .Ev2_RegistrationEventTime::before {
     content: '\f017';
-    font-family: FontAwesome;
+    font-family: "SSPika";
     font-size: 2rem;
     color: #EE2752;
     margin-right: 0.35em;
@@ -4142,7 +4144,7 @@ select.Ev2_RegistrantAddressControlDropDown {
     display: inline-block; }
     .Ev2_DescriptionContainer div[id*="ctlDescription"]:before {
       content: '\f05a';
-      font-family: FontAwesome;
+      font-family: "SSPika";
       color: #999;
       font-size: 1rem;
       padding-right: 0.35em; }
@@ -4314,7 +4316,7 @@ label.Ev2_PriceName.BBFieldCaption {
     font-weight: 400; }
     .Ev2_OrgRegText label[for*="chkOrgRegistration"]::before {
       content: '\f0f7';
-      font-family: FontAwesome;
+      font-family: "SSPika";
       display: inline-block;
       padding-right: 0.45em; }
     .Ev2_OrgRegText label[for*="chkOrgRegistration"]:hover {
@@ -4728,7 +4730,7 @@ table.BBFormTable.SearchFormTable {
         background-color: #47bddb;
         content: '\f002';
         color: #EE2752;
-        font-family: FontAwesome; }
+        font-family: "SSPika"; }
   table.BBFormTable.SearchFormTable tr:nth-child(2) table td:nth-child(2) {
     width: 70%; }
     table.BBFormTable.SearchFormTable tr:nth-child(2) table td:nth-child(2) input.SearchTextBox {
@@ -4748,7 +4750,7 @@ table.BBFormTable.SearchFormTable {
     padding-top: 1em; }
     table.BBFormTable.SearchFormTable table.SearchTable a[id*="rpResultList"]::after {
       content: '\f0a9';
-      font-family: FontAwesome;
+      font-family: "SSPika";
       display: inline-block;
       color: #4f4f4f;
       text-decoration: none;
@@ -4793,8 +4795,52 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 /*---------------------------------------------
                      ::3.2 Layout
 ----------------------------------------------*/
+.wrapper {
+  position: relative;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  padding: 0; }
+  .wrapper.nav {
+    background: url("../image/bgMainNav.png") no-repeat center center/100% auto transparent; }
+  .wrapper.breadcrumbs {
+    background: url(../image/bgBreadcrumbs.png) repeat 0 0 #75736e; }
+  .wrapper.blueBg {
+    position: relative;
+    background-color: #2e5a98; }
+    .wrapper.blueBg .container {
+      padding-bottom: 64px;
+      margin-bottom: 28px;
+      			/*
+      &:empty {
+      				margin: 0;
+      				padding: 0;
+      			}
+      */ }
+    .wrapper.blueBg::before {
+      content: "";
+      height: 4px;
+      left: 0;
+      position: absolute;
+      top: -4px;
+      width: 100%;
+      z-index: 1;
+      background: url("../image/bgBlueTopPattern.png") repeat-x center 0 transparent; }
+    .wrapper.blueBg::after {
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+      background: url("../image/bgGlow.png") no-repeat center 0 transparent; }
+    .wrapper.blueBg:empty {
+      margin: 0;
+      padding: 0; }
+
 .container {
-  max-width: 60rem;
+  max-width: 61.25rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -4805,28 +4851,79 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
   .container:after {
     clear: both; }
 
-.utility .QuickSearchFormTable {
-  float: right; }
+/*---------------------------------------------
+                     ::3.2.1 Header
+----------------------------------------------*/
+.logo {
+  float: left;
+  max-width: 380px; }
 
-.wrapContent {
+.utility {
+  float: right; }
+  .utility .QuickSearchFormTable {
+    float: right; }
+
+/*---------------------------------------------
+                     ::3.2.2 Main Nav
+----------------------------------------------*/
+/*---------------------------------------------
+                     ::3.2.3 Breadcrumbs
+----------------------------------------------*/
+/*---------------------------------------------
+                     ::3.2.4 Main Content
+----------------------------------------------*/
+.mainContent {
+  padding: 28px 0; }
+  .mainContent:empty {
+    margin: 0;
+    padding: 0; }
+  .mainContent article {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    margin-right: 0; }
+    .mainContent article:last-child {
+      margin-right: 0; }
+    .mainContent article.halfWidth {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%;
+      padding: 28px 0; }
+      .mainContent article.halfWidth:last-child {
+        margin-right: 0; }
+      .mainContent article.halfWidth:empty {
+        margin: 0;
+        padding: 0; }
+      .mainContent article.halfWidth.last {
+        margin-right: 0; }
+
+.blueBg article {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 65.8807828007%; }
-  .wrapContent:last-child {
+  width: 23.2317613015%; }
+  .blueBg article:last-child {
     margin-right: 0; }
 
 /*---------------------------------------------
-                     ::3.3 Flexi Layout
+                     ::3.2.5 Footer
 ----------------------------------------------*/
+footer .footer {
+  background-color: #3a3a3f; }
+footer .footerAlt {
+  background-color: #fff; }
+footer address, footer article {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%; }
+  footer address:last-child, footer article:last-child {
+    margin-right: 0; }
+
 /*---------------------------------------------
-                     ::3.4 Utility Area
-----------------------------------------------*/
-/*---------------------------------------------
-                     ::3.5 Quick Search
-----------------------------------------------*/
-/*---------------------------------------------
-                     ::3.6 Skip Link
+                     ::3.3 Skip Link
 ----------------------------------------------*/
 p.skip {
   height: 0;
@@ -4855,15 +4952,15 @@ a.skip:hover, a.skip:active, a.skip:focus {
                      ::4.1 Global Menu Styles
 ----------------------------------------------*/
 /* menu list reset */
-.menuReset, .utility ul, nav.wrapNav ul.mainNav, .wrapContent nav.breadcrumbs ul, aside nav ul.mainNav, aside nav ul.mainNav li ul, aside nav ul.mainNav li.selected > ul, footer nav ul.mainNav, footer nav ul.mainNav li.showInFooter ul {
+.menuReset, .utility ul, nav ul.mainNav, .wrapContent nav.breadcrumbs ul, aside nav ul.mainNav, aside nav ul.mainNav li ul, aside nav ul.mainNav li.selected > ul, footer nav ul.mainNav, footer nav ul.mainNav li.showInFooter ul {
   list-style: none outside none;
   margin: 0;
   padding: 0; }
-  .menuReset li, .utility ul li, nav.wrapNav ul.mainNav li, .wrapContent nav.breadcrumbs ul li, aside nav ul.mainNav li, aside nav ul.mainNav li ul li, aside nav ul.mainNav li.selected > ul li, footer nav ul.mainNav li, footer nav ul.mainNav li.showInFooter ul li {
+  .menuReset li, .utility ul li, nav ul.mainNav li, .wrapContent nav.breadcrumbs ul li, aside nav ul.mainNav li ul li, aside nav ul.mainNav li.selected > ul li, footer nav ul.mainNav li.showInFooter ul li {
     float: left;
     margin: 0;
     padding: 0; }
-    .menuReset li a, .utility ul li a, nav.wrapNav ul.mainNav li a, .wrapContent nav.breadcrumbs ul li a, aside nav ul.mainNav li a, aside nav ul.mainNav li.selected > ul li a, footer nav ul.mainNav li a, footer nav ul.mainNav li.showInFooter ul li a {
+    .menuReset li a, .utility ul li a, nav ul.mainNav li a, .wrapContent nav.breadcrumbs ul li a, aside nav ul.mainNav li ul li a, aside nav ul.mainNav li.selected > ul li a, footer nav ul.mainNav li.showInFooter ul li a {
       cursor: pointer;
       text-decoration: none;
       display: block; }
@@ -4890,48 +4987,52 @@ a.skip:hover, a.skip:active, a.skip:focus {
 /*---------------------------------------------
                      ::4.2 Main Horizontal Navigation
 ----------------------------------------------*/
-nav.wrapNav ul.mainNav {
+nav ul.mainNav {
   width: 100%;
   position: relative; }
-  nav.wrapNav ul.mainNav li {
+  nav ul.mainNav li {
     position: relative; }
-    nav.wrapNav ul.mainNav li a {
+    nav ul.mainNav li:hover > a {
+      background-color: #749a23;
+      color: #fff; }
+    nav ul.mainNav li a {
       color: #fff;
       text-transform: uppercase;
       position: relative;
       z-index: 100;
       float: left;
-      z-index: 200;
-      font-family: 'Open Sans Condensed';
-      font-weight: 700;
-      padding: 5px 12px;
-      margin-left: 2px;
-      font-size: 0.9375rem;
-      line-height: 1;
-      letter-spacing: .1em; }
-      nav.wrapNav ul.mainNav li a:hover {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      padding: 21px 12px 19px;
+      font-size: 1.125rem;
+      line-height: 2.5rem;
+      -webkit-transition: background 0.3s ease 0s;
+      -moz-transition: background 0.3s ease 0s;
+      -o-transition: background 0.3s ease 0s;
+      transition: background 0.3s ease 0s; }
+      nav ul.mainNav li a:hover {
         text-decoration: none;
-        background: #47bddb; }
-    nav.wrapNav ul.mainNav li ul {
+        background: #749a23; }
+    nav ul.mainNav li ul {
       display: none;
       position: absolute;
-      top: 0;
+      top: 100%;
       margin: 0;
-      padding: 49px 0 0;
-      left: -1px;
+      padding: 0;
+      left: 0;
       float: none;
       width: auto;
       width: 200px;
       background: transparent;
       z-index: 2; }
-      nav.wrapNav ul.mainNav li ul li {
+      nav ul.mainNav li ul li {
         float: none;
         display: block;
         width: 100%;
         margin: 0;
         padding: 0;
         border: 0; }
-        nav.wrapNav ul.mainNav li ul li a {
+        nav ul.mainNav li ul li a {
           color: #4f4f4f;
           font-weight: 400;
           font-size: 0.875rem;
@@ -4943,56 +5044,56 @@ nav.wrapNav ul.mainNav {
           width: 100%;
           background: #ccc;
           text-transform: none; }
-          nav.wrapNav ul.mainNav li ul li a:hover {
+          nav ul.mainNav li ul li a:hover {
             color: #4f4f4f;
             text-decoration: underline; }
-        nav.wrapNav ul.mainNav li ul li ul {
+        nav ul.mainNav li ul li ul {
           display: none; }
-          nav.wrapNav ul.mainNav li ul li ul ul {
+          nav ul.mainNav li ul li ul ul {
             display: none; }
-            nav.wrapNav ul.mainNav li ul li ul ul ul {
+            nav ul.mainNav li ul li ul ul ul {
               display: none; }
-        nav.wrapNav ul.mainNav li ul li:first-child a {
+        nav ul.mainNav li ul li:first-child a {
           padding-top: 1.125rem; }
-        nav.wrapNav ul.mainNav li ul li:last-child a {
+        nav ul.mainNav li ul li:last-child a {
           padding-bottom: 2.5rem; }
-    nav.wrapNav ul.mainNav li:hover a {
+    nav ul.mainNav li:hover a {
       text-decoration: none; }
-    nav.wrapNav ul.mainNav li:hover ul {
+    nav ul.mainNav li:hover ul {
       display: block; }
-      nav.wrapNav ul.mainNav li:hover ul ul {
+      nav ul.mainNav li:hover ul ul {
         display: none; }
-        nav.wrapNav ul.mainNav li:hover ul ul ul {
+        nav ul.mainNav li:hover ul ul ul {
           display: none; }
-    nav.wrapNav ul.mainNav li:first-child {
+    nav ul.mainNav li:first-child {
       border-left: 0; }
-    nav.wrapNav ul.mainNav li.showInFooter, nav.wrapNav ul.mainNav li.showOnMobile {
+    nav ul.mainNav li.showInFooter, nav ul.mainNav li.showOnMobile {
       display: none !important; }
-    nav.wrapNav ul.mainNav li.showOnMobile {
+    nav ul.mainNav li.showOnMobile {
       display: none !important; }
       @media (max-width: 47.9375em) {
-        nav.wrapNav ul.mainNav li.showOnMobile {
+        nav ul.mainNav li.showOnMobile {
           display: block !important; } }
-    nav.wrapNav ul.mainNav li.donate {
+    nav ul.mainNav li.donate {
       border-left: 0;
       float: right;
       margin-top: 0;
       line-height: 1; }
-      nav.wrapNav ul.mainNav li.donate a {
+      nav ul.mainNav li.donate a {
         background: #B5BB14;
         color: #535353;
         line-height: 1;
         padding: 25px 19px; }
-        nav.wrapNav ul.mainNav li.donate a:hover {
+        nav ul.mainNav li.donate a:hover {
           background: #cbd216;
           color: #000; }
-    nav.wrapNav ul.mainNav li.home a {
+    nav ul.mainNav li.home a {
       padding-left: 0; }
       @media (max-width: 767px) {
-        nav.wrapNav ul.mainNav li.home a {
+        nav ul.mainNav li.home a {
           padding-left: 1.8125rem; } }
   @media (max-width: 47.9375em) {
-    nav.wrapNav ul.mainNav {
+    nav ul.mainNav {
       display: none;
       background-color: #fff;
       float: none;
@@ -5004,31 +5105,31 @@ nav.wrapNav ul.mainNav {
       width: 150px;
       z-index: 1000;
       right: 0; }
-      nav.wrapNav ul.mainNav li {
+      nav ul.mainNav li {
         border: 0;
         background: transparent;
         width: 100%;
         display: block;
         float: left;
         margin: 0; }
-        nav.wrapNav ul.mainNav li a {
+        nav ul.mainNav li a {
           color: #4f4f4f;
           background: transparent;
           width: 100%;
           display: block;
           margin: 0;
           padding: 7px 1rem; }
-        nav.wrapNav ul.mainNav li ul {
+        nav ul.mainNav li ul {
           display: none; }
-        nav.wrapNav ul.mainNav li:hover a {
+        nav ul.mainNav li:hover a {
           text-decoration: none; }
-        nav.wrapNav ul.mainNav li:hover ul {
+        nav ul.mainNav li:hover ul {
           display: none; }
-        nav.wrapNav ul.mainNav li[class*="icon"] a {
+        nav ul.mainNav li[class*="icon"] a {
           visibility: hidden;
           font-size: 0;
           line-height: 0; }
-          nav.wrapNav ul.mainNav li[class*="icon"] a:before {
+          nav ul.mainNav li[class*="icon"] a:before {
             visibility: visible;
             font-size: 1rem; } }
 
@@ -5133,7 +5234,7 @@ aside nav ul.mainNav li.selected a.selected {
   font-family: "Oswald", sans-serif; }
   .toggleMainNav:after {
     content: '\f0c9';
-    font-family: FontAwesome;
+    font-family: "SSPika";
     font-size: 1.5625rem;
     line-height: 1;
     position: relative;
@@ -5300,34 +5401,25 @@ h3, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderForm
 h4, *.DetailEventTitle, *.ListViewEventDate, *.ClassPageHeaderTeacherName, *.ClassPageHeaderTeacherEmail,
 h5,
 h6 {
-  margin: 0 0 0.875em;
+  margin: 0;
   padding: 0;
   font-weight: 400;
-  color: #000;
+  color: #4f4f4f;
   line-height: normal;
   text-align: left;
-  font-family: "Merriweather", serif; }
+  font-family: "Oswald", sans-serif; }
 
 h1, *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.LoginSectionHeader, *.DonationListingHeading, *.DonationCaptureListingHeading, *.EventSectionHeader, *.FRDonorListSetCaption, *.FRCommentsFieldSet .FRFieldSetCaption, *.ECardWizardHeading, *.UpcomingEventTitle, *.RecentEventTitle, *.SearchFormTable .SearchFormTitle, *.CHFormTitle, *.NCC_Forms_Title, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.PostChannelStoryFormTitle, *.ReportsLandingTable caption, *.JobResultsHeading, *.ClassPageHeaderClassName, *.UPMPartEditToolbarTitle, *.myHomeBox th, .Ev2_TitleLabel, .Ev2_RegistrationEventTitle, .DiscussionGroupFormTitle, .EventItemTitleName, .SummaryGridEventTitle, .NewsChannelItemTitle, .EventCalendarPartContainer .DetailEventTitle, *.LoginSectionHeader, .DonorGrantListingHeading, .headerOneStyle {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 2rem;
-  color: #000;
-  font-family: "Merriweather", serif;
-  display: block;
-  line-height: 2.125rem;
-  margin: 1.875rem 0 0;
-  padding: 1.25rem 0;
-  border-top: 1px solid #c6c2ba; }
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 1;
+  color: #383838;
+  margin-bottom: 24px; }
 
 *.BBFormTitle, *.SurveyTitle, *.ReportTitle, *.NCC_Forms_Title, *.SearchFormTitle, *.EventCalendarName, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.DiscussionGroupFormTitle, *.JobBoardFormTitle, *.EventSectionHeader, *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.CalendarFormLegend, *.DirectoryFormTitle, *.CalendarFormLegend, *.ProfileFormTitle, *.DiscussionGroupHeadingCell, *.BBPollsFormTitle, *.NewsChannelFormTitle, *.FRSectionHeader, .NewsChannelItemTitle, .DonorGrantListingHeading {
   margin: 0;
   padding: 0 0 1.25rem; }
-
-.mainContent h1:first-child {
-  border: 0;
-  margin-bottom: 15px;
-  padding: 0; }
 
 .logo h1 {
   margin: 0;
@@ -5351,17 +5443,6 @@ h2, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.DonationListingHeadi
     white-space: nowrap;
   }
 */
-aside h2 {
-  font-family: 'Open Sans Condensed';
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.4375rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  border-bottom: 1px solid #000;
-  margin-bottom: 25px;
-  padding-top: 0; }
-
 h3 {
   font-size: 0.75rem;
   font-weight: 900;
@@ -5373,9 +5454,6 @@ h3 {
   padding: 0;
   background: inherit;
   height: auto; }
-
-h3 {
-  margin: 2px 0 4px; }
 
 h4, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderFormTitle, *.EventItemTitleTime, *.EventItemRegistrationsHeader, *.EventItemRegistrantsEventName, *.FRSectionHeader, *.FRFieldSetCaption, *.DiscussionGroupHeadingText, *.PostDiscussionReplyHeading, *.PostDiscussionPreviewHeading, *.SpellHeading, table.ReportFormTable legend, fieldset .CHFormTitle, *.CalendarViewTopMiddle, *.ReportListingHeading, *.NCC_Forms_Subtitle, *.DiscussionTopicSubject, *.OCCHeader, *.ClassPageHeaderPageName, .SurveyQuestion {
   font-size: 0.875rem;
@@ -5486,6 +5564,26 @@ p, table.BBListingTable p {
     color: #c6c2ba;
     text-decoration: none;
     padding: 0 3px; }
+
+.blueBg h1, .blueBg h2, .blueBg h3, .blueBg h4, .blueBg h5, .blueBg h6, .blueBg p, .blueBg a, .blueBg li, .blueBg dd, .blueBg [class*="icon"] {
+  color: #fff; }
+.blueBg [class*="icon"] {
+  font-size: 33px;
+  height: 33px;
+  line-height: 45px;
+  margin-bottom: 15px;
+  top: 2px;
+  width: 36px;
+  color: #a9d1fa; }
+.blueBg h2 {
+  display: block;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  margin: 15px auto;
+  text-transform: uppercase; }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer a {
   color: #efede9;
@@ -5649,18 +5747,8 @@ li p {
     background-image: none;
     padding-left: 0; }
 
-#wrapContent section[role="content"] ul.socialMediaIcons {
-  list-style: none;
-  display: block;
-  position: relative;
-  width: 100%; }
-  #wrapContent section[role="content"] ul.socialMediaIcons li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    float: left;
-    padding: 0;
-    margin: 0; }
+[class*="icon"] {
+  font-family: "SSPika"; }
 
 /*=========================================================================================
                      ::6. Buttons
@@ -6063,7 +6151,7 @@ img {
   position: relative;
   z-index: 1; }
   .sidebarContent::before, .commTxt::before {
-    font-family: FontAwesome;
+    font-family: "SSPika";
     content: '\f0d8';
     position: absolute;
     z-index: 200;
@@ -6492,7 +6580,7 @@ input[id*=Attributes][type=checkbox] + label {
 .EventItemTitleTime:before {
   content: '\f017';
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "SSPika";
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -6537,7 +6625,7 @@ td[id*="rpFileList_EditBtnCell"] {
 [id*="btnAddDocument"]:after {
   content: '\f093';
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "SSPika";
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -6553,7 +6641,7 @@ td[id*="rpFileList_EditBtnCell"] {
 
 a[id*="rpFileList_btnEdit"]:before, a[id*="rpFileList_btnDelete"]:before {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "SSPika";
   font-style: normal;
   font-weight: 400;
   line-height: 2.25rem;
@@ -6573,7 +6661,7 @@ a[id*="rpFileList_btnDelete"]:before {
 a.BBDocumentDisplayHeader:after {
   content: '\f0dc';
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "SSPika";
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -6592,7 +6680,7 @@ tr.BBDocumentDisplayHeaderRow + tr td {
 a[id*="rpFileList_FileLink"]:before {
   content: '\f016';
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "SSPika";
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -6630,7 +6718,7 @@ dl.myHomeProfileDisplay {
     dl.myHomeProfileDisplay dd a:before {
       content: '\f040';
       padding: 0 .3em;
-      font-family: FontAwesome;
+      font-family: "SSPika";
       display: inline-block; }
     dl.myHomeProfileDisplay dd span:empty {
       display: none; }
@@ -6646,7 +6734,7 @@ ul.myHomeProfileLinks {
     padding: 0; }
     ul.myHomeProfileLinks li a:before {
       content: '\f101';
-      font-family: FontAwesome;
+      font-family: "SSPika";
       display: inline-block;
       padding-right: .5em;
       color: #EE2752;
@@ -6866,7 +6954,7 @@ input.DonorGrantSubmitButton {
     visibility: hidden; }
     [id*="pnlExport"] .DTGrid [id*="lblExport"] a:after {
       content: '\f019';
-      font-family: FontAwesome;
+      font-family: "SSPika";
       visibility: visible;
       padding: 6px 10px 4px;
       color: #fff;
@@ -6904,7 +6992,7 @@ input.DonorGrantSubmitButton {
   font-style: italic;
   font-size: 2rem;
   color: #000;
-  font-family: "Merriweather", serif;
+  font-family: "Oswald", sans-serif;
   display: block;
   line-height: 2.125rem;
   padding: 1.25rem 0; }

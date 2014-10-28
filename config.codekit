@@ -53,6 +53,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/image\/bgBreadcrumbs.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2018,
+		"inputAbbreviatedPath": "\/image\/bgBreadcrumbs.png",
+		"outputAbbreviatedPath": "\/image\/bgBreadcrumbs.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/bgGlow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48091,
+		"inputAbbreviatedPath": "\/image\/bgGlow.png",
+		"outputAbbreviatedPath": "\/image\/bgGlow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/bgMainNav.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12333,
+		"inputAbbreviatedPath": "\/image\/bgMainNav.png",
+		"outputAbbreviatedPath": "\/image\/bgMainNav.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/image\/body.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -451,7 +484,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "BrowardCounty",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "globe_yellow"
 	},
 "projectSettings": {
