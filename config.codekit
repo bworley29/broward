@@ -122,7 +122,7 @@
 	"\/internal.html": {
 		"fileType": 8192,
 		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/internal.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,

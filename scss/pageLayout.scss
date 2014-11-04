@@ -61,7 +61,22 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 	margin: 0;
 	padding: 0;
 	
-	&.nav { background: url('../image/bgMainNav.png') no-repeat center center / 100% auto transparent; }
+	&.nav { 
+		background: url('../image/bgMainNav.png') no-repeat center center / 100% auto transparent;
+		position: relative;
+		z-index: 20;
+		
+		&:before {
+			background: url('../image/bgGlow.png') no-repeat center center / 100% auto transparent;
+			content: "";
+		    height: 100%;
+		    left: 0;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		}
+	
+	}
 	
 	&.breadcrumbs { background:  url(../image/bgBreadcrumbs.png) repeat 0 0 #75736e; }
 	
@@ -153,6 +168,12 @@ header {
 	
 	.utility {
 		float: right;
+		
+		nav { 
+			margin: 21px 0 33px;
+			float: right; 
+		}
+		
 		.QuickSearchFormTable {float: right;}
 	}
 }

@@ -4802,7 +4802,17 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
   margin: 0;
   padding: 0; }
   .wrapper.nav {
-    background: url("../image/bgMainNav.png") no-repeat center center/100% auto transparent; }
+    background: url("../image/bgMainNav.png") no-repeat center center/100% auto transparent;
+    position: relative;
+    z-index: 20; }
+    .wrapper.nav:before {
+      background: url("../image/bgGlow.png") no-repeat center center/100% auto transparent;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
   .wrapper.breadcrumbs {
     background: url(../image/bgBreadcrumbs.png) repeat 0 0 #75736e; }
   .wrapper.blueBg {
@@ -4874,6 +4884,9 @@ header {
         width: 100%; } }
   header .utility {
     float: right; }
+    header .utility nav {
+      margin: 21px 0 33px;
+      float: right; }
     header .utility .QuickSearchFormTable {
       float: right; }
 
@@ -4972,15 +4985,15 @@ a.skip:hover, a.skip:active, a.skip:focus {
                      ::4.1 Global Menu Styles
 ----------------------------------------------*/
 /* menu list reset */
-.menuReset, .utility ul, nav ul.mainNav, .wrapContent nav.breadcrumbs ul, aside nav ul.mainNav, aside nav ul.mainNav li ul, aside nav ul.mainNav li.selected > ul, footer nav ul.mainNav, footer nav ul.mainNav li.showInFooter ul {
+.menuReset, nav ul.mainNav, .wrapContent nav.breadcrumbs ul, aside nav ul.mainNav, aside nav ul.mainNav li ul, aside nav ul.mainNav li.selected > ul, footer nav ul.mainNav, footer nav ul.mainNav li.showInFooter ul {
   list-style: none outside none;
   margin: 0;
   padding: 0; }
-  .menuReset li, .utility ul li, nav ul.mainNav li, .wrapContent nav.breadcrumbs ul li, aside nav ul.mainNav li ul li, aside nav ul.mainNav li.selected > ul li, footer nav ul.mainNav li.showInFooter ul li {
+  .menuReset li, nav ul.mainNav li, .wrapContent nav.breadcrumbs ul li, aside nav ul.mainNav li ul li, aside nav ul.mainNav li.selected > ul li, footer nav ul.mainNav li.showInFooter ul li {
     float: left;
     margin: 0;
     padding: 0; }
-    .menuReset li a, .utility ul li a, nav ul.mainNav li a, .wrapContent nav.breadcrumbs ul li a, aside nav ul.mainNav li ul li a, aside nav ul.mainNav li.selected > ul li a, footer nav ul.mainNav li.showInFooter ul li a {
+    .menuReset li a, nav ul.mainNav li a, .wrapContent nav.breadcrumbs ul li a, aside nav ul.mainNav li ul li a, aside nav ul.mainNav li.selected > ul li a, footer nav ul.mainNav li.showInFooter ul li a {
       cursor: pointer;
       text-decoration: none;
       display: block; }
@@ -4988,21 +5001,179 @@ a.skip:hover, a.skip:active, a.skip:focus {
 /*---------------------------------------------
                      ::4.1 Utility Navigation
 ----------------------------------------------*/
-.utility {
-  font-family: "Oswald", sans-serif; }
-  .utility article:first-child ul li a {
-    color: #efede9;
+.utility nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 30;
+  position: relative;
+  display: inline-block;
+  float: left; }
+  .utility nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .utility nav ul li a {
+      display: inline-block;
+      position: relative;
+      font-family: "Oswald", sans-serif;
+      z-index: 2; }
+      .utility nav ul li a:hover {
+        text-decoration: none; }
+.utility .taskNav li {
+  background: none repeat scroll 0 0 #749a23;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 20px;
+  padding: 5px 11px 5px 13px;
+  position: relative; }
+  .utility .taskNav li a {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    text-transform: uppercase; }
+  .utility .taskNav li.parent:hover {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .utility .taskNav li.parent:after {
+    content: '\25BE';
+    font-family: "SSPika";
+    font-size: 0.6875rem;
+    line-height: 1;
+    padding-left: 10px;
+    position: relative;
+    top: -2px; }
+  .utility .taskNav li.mail a:before {
+    content: '\2709';
+    font-family: "SSPika";
+    padding-right: 8px;
+    line-height: 1;
+    position: relative;
+    top: 1px; }
+  .utility .taskNav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; }
+    .utility .taskNav li ul li {
+      float: none;
+      display: block;
+      border-radius: 0;
+      background-color: #399bcf;
+      padding: 0 11px; }
+      .utility .taskNav li ul li:first-child {
+        padding-top: 5px; }
+      .utility .taskNav li ul li:last-child {
+        padding-bottom: 5px;
+        margin-left: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; }
+      .utility .taskNav li ul li a:hover {
+        color: #333; }
+  .utility .taskNav li:hover {
+    background-color: #399bcf; }
+    .utility .taskNav li:hover ul {
+      display: block; }
+  .utility .taskNav li:last-child {
+    margin-left: 11px; }
+.utility .utilityNav {
+  margin: 2px 0 0 15px;
+  z-index: 40; }
+  .utility .utilityNav li a {
+    color: #454545;
+    font-size: 0.875rem;
+    line-height: 1.4375rem; }
+    .utility .utilityNav li a:hover {
+      color: #399bcf; }
+  .utility .utilityNav li.user a:after {
+    content: '\1F464';
+    font-family: "SSPika";
+    padding: 0 0 2px 5px;
     font-size: 0.75rem;
-    line-height: 1.875rem; }
-  .utility ul li a {
-    font-size: 0.75rem;
-    text-transform: capitalize;
-    border: 0;
-    font-weight: 700;
-    font-family: "Oswald", sans-serif; }
-    .utility ul li a:hover {
-      text-decoration: none;
-      border: 0; }
+    line-height: 1; }
+  .utility .utilityNav li:last-child {
+    margin-left: 14px; }
+    .utility .utilityNav li:last-child a:after {
+      content: '\1F50E';
+      font-family: "SSPika";
+      padding: 0 0 2px 5px;
+      font-size: 0.75rem;
+      line-height: 1; }
+.utility .socialNav {
+  margin-left: 15px;
+  position: relative; }
+  .utility .socialNav li {
+    padding: 5px 8px 0;
+    position: relative; }
+    .utility .socialNav li a {
+      font-family: FontAwesome;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+      color: #fff;
+      border-radius: 2rem;
+      background-color: #333;
+      vertical-align: top;
+      text-align: center;
+      line-height: 1;
+      font-size: 16px;
+      padding: 4px 0 0 5px; }
+      .utility .socialNav li a[class*="instagram"] {
+        background-color: #517fa4; }
+      .utility .socialNav li a[class*="twitter"] {
+        margin-left: 6px;
+        background-color: #00aced; }
+      .utility .socialNav li a[class*="google"] {
+        background-color: #dd4b39; }
+      .utility .socialNav li a[class*="facebook"] {
+        margin-left: 6px;
+        background-color: #3b5998; }
+      .utility .socialNav li a[class*="flickr"] {
+        margin-left: 6px;
+        background-color: #ff0084; }
+      .utility .socialNav li a[class*="you"] {
+        background-color: #bb0000; }
+      .utility .socialNav li a[class*="linked"] {
+        background-color: #007bb6; }
+      .utility .socialNav li a:hover {
+        background-color: #333; }
+    .utility .socialNav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff; }
+    .utility .socialNav li:after {
+      content: '\25BE';
+      font-family: "SSPika";
+      font-size: 0.6875rem;
+      line-height: 1;
+      padding-left: 0px;
+      position: relative;
+      top: -2px;
+      color: #333; }
+    .utility .socialNav li:hover {
+      background-color: #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding-bottom: 0; }
+      .utility .socialNav li:hover ul {
+        display: block;
+        background-color: transparent; }
+        .utility .socialNav li:hover ul li {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          padding-top: 0;
+          padding-bottom: 5px;
+          background-color: #fff; }
+          .utility .socialNav li:hover ul li:hover {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px; }
+          .utility .socialNav li:hover ul li:after {
+            display: none; }
 
 /*---------------------------------------------
                      ::4.2 Main Horizontal Navigation
@@ -5025,11 +5196,7 @@ nav ul.mainNav {
       font-weight: 400;
       padding: 21px 12px 19px;
       font-size: 1.125rem;
-      line-height: 2.5rem;
-      -webkit-transition: background 0.3s ease 0s;
-      -moz-transition: background 0.3s ease 0s;
-      -o-transition: background 0.3s ease 0s;
-      transition: background 0.3s ease 0s; }
+      line-height: 2.5rem; }
       nav ul.mainNav li a:hover {
         text-decoration: none;
         background: #749a23; }
@@ -5097,7 +5264,8 @@ nav ul.mainNav {
       line-height: 1;
       position: relative;
       margin-left: 6px;
-      top: -2px; }
+      top: -2px;
+      color: #c2c2c2; }
   @media (max-width: 47.9375em) {
     nav ul.mainNav {
       display: none;
@@ -5430,6 +5598,11 @@ h1, *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.Login
 .logo h1 {
   margin: 0;
   border: 0; }
+  .logo h1 a {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%; }
 
 h2, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.EventSectionHeader, *.FRDonorListSetCaption, *.FRCommentsFieldSet .FRFieldSetCaption, *.ECardWizardHeading, *.UpcomingEventTitle, *.RecentEventTitle, *.SearchFormTable .SearchFormTitle, *.CHFormTitle, *.NCC_Forms_Title, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.PostChannelStoryFormTitle, *.ReportsLandingTable caption, *.SearchJobHeading, *.JobResultsHeading, *.ClassPageHeaderClassName, *.UPMPartEditToolbarTitle, *.myHomeBox th, *.SearchJobHeading, *.PostJobHeading, *.PostDiscussionTopicHeadingCell, .AdditionalDonation_Heading, .Ev2_SummaryHeader, .Ev2_RegistrantAddressHeader label, .Ev2_RegistrantHeader, .EventItemTitleDescription, .EventTicketsHeaderCell {
   font-size: 0.875rem;
@@ -5491,7 +5664,11 @@ a, a:visited, a.LoginLink, a.PhotoLink, a.Album_BackToPhotosLink, a.Album_AlbumN
   text-decoration: none;
   color: #47bddb;
   cursor: pointer;
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  -webkit-transition: background 0.3s ease 0s;
+  -moz-transition: background 0.3s ease 0s;
+  -o-transition: background 0.3s ease 0s;
+  transition: background 0.3s ease 0s; }
 
 a h1, a h2, a h3, a h4, a h5, a h6, a p {
   color: #47bddb; }

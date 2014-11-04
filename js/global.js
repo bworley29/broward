@@ -313,7 +313,7 @@ BBI = {
 					var utilitySearchClone = $('#utility table.QuickSearchFormTable').clone();
 					var utilitySearchIcon = 'ul.utilityNav li.search a';
 					
-					$('<li class="search"><a class="fa fa-search" href="#"></a></li>').insertAfter('.utilityNav li:last-child');
+					//$('<li class="search"><a class="fa fa-search" href="#"></a></li>').insertAfter('.utilityNav li:last-child');
 					
 					//
 					$(utilitySearchClone).insertAfter(utilitySearchIcon);

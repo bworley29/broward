@@ -54,6 +54,13 @@ h1 , *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.Logi
 .logo h1 {
 	margin: 0;
 	border: 0;
+	
+	a {
+		display: block;
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
 }
 
 
@@ -125,6 +132,7 @@ article, aside { line-height: 1.3529rem; }
 ----------------------------------------------*/
 a, a:visited, a.LoginLink, a.PhotoLink, a.Album_BackToPhotosLink, a.Album_AlbumNameLink, a.Album_AlbumActionItem, a.BBLinkHelpIcon, a.PaymentPartClearLink, a.EventCalendarButtons, a.ListViewEventTitle, a.BBFormDisplayHelpImage, a.DiscussionTopicLink, a.DiscussionSearchLink, a.JobBoardSearchLink, a.JobBoardPostLink, a.JobResultsLink, a.BBNameLink, .BBNameLink:link, .DiscussionTopicLink:link, a.BBNameLink,  a.BBVolOpLink, .fc-content a, .fc-content a:visited, a.ChannelStoryDeleteButtonWAI, a.ChannelStoryEditButtonWAI {
 	@include link-style;
+	@include transition(background 0.3s ease 0s);
 }
 
 a {
