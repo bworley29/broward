@@ -111,8 +111,8 @@ nav ul.mainNav
 			left: 0;
 			float: none;
 			width: auto;
-			width: 200px;
-			background: transparent;
+			width: 184px;
+			background: #749a23;
 			z-index: 2;
 			
 			
@@ -125,21 +125,23 @@ nav ul.mainNav
 				border: 0;
 				
 				a {
-					color: $body-font-color;
+					color: #fff;
 					font-weight: 400;
-					font-size: rem(14);
-					line-height: 1;
+					font-size: rem(16);
+					line-height: rem(24);
 					text-align: left;
 					margin: 0;
-					padding: rem(7) rem(17);
+					padding: 5px 11px;
 					display: block;
 					width: 100%;
-					background: #ccc;
+					background: transparent;
 					text-transform: none;
+					border-top: 1px solid rgba(0, 0, 0, 0.2) ;
 					
 					&:hover {
-						color: $body-font-color;
-						text-decoration: underline;
+						color: #fff;
+						text-decoration: none;
+						background: url('../image/bgMainNav.png') repeat 0 0 #3d3a38;
 					}
 					
 				}
@@ -156,12 +158,9 @@ nav ul.mainNav
 						}
 					}
 				}
-				&:first-child a {
-						padding-top: rem(18);
-					}
-				&:last-child a {
-						padding-bottom: rem(40);
-					}
+				
+				&:first-child a { border-top: 0; }
+
 			}
 		}
 		&:hover {
@@ -183,47 +182,21 @@ nav ul.mainNav
 				}
 			}
 		}
-		&:first-child {border-left: 0;}
-		&.showInFooter, &.showOnMobile {
-			display: none !important;
-			
-		}
+
 		&.showOnMobile {
 			display: none !important;
 			
 			@media (max-width: $small-breakpoint) { display: block !important; }
 		}
-		&.donate {
-			border-left: 0;
-			float: right;
-			margin-top: 0;
+		
+		&.parent > a:after {
+			content: '\25BE';
+			font-family: $icon-font-family;
+			font-size: 12px;
 			line-height: 1;
-			
-			a {
-				background: #B5BB14;
-				color: #535353;
-				line-height: 1;
-				padding: 25px 19px;
-				
-				&:hover {
-					background: lighten(#B5BB14, 5%);
-					color: #000;
-					//color: #fff;
-				}
-		
-			}
-			
-			//@media (max-width: 800px) { display: none; }
-		}
-		
-		&.home {
-			a { 
-				padding-left: 0; 
-				
-				@media (max-width:767px) {
-					padding-left: 1.8125rem;
-				}
-			}
+			position: relative;
+			margin-left: 6px;
+			top: -2px;
 		}
 	}
 	
