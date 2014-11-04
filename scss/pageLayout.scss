@@ -85,18 +85,6 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 		position: relative;
 		background-color: #2e5a98;
 		
-		.container {
-			padding-bottom: 64px;
-			margin-bottom: 28px;
-			
-
-			&:empty {
-				margin: 0;
-				padding: 0;
-			}
-
-		}
-		
 		&::before {
 			content: "";
 		    height: 4px;
@@ -226,12 +214,76 @@ header {
 	}
 }
 
+// Call Out Boxes
+
+.callOutBoxFull {
+	@include span-columns(12);
+}
+
+.callOutBoxHalf {
+	@include span-columns(6);
+}
+
+.callOutBoxThird {
+	@include span-columns(4);
+}
+
+.callOutBoxFourth {
+	@include span-columns(3);
+}
+
+[class*="callOutBox"] {
+	background: url(../image/bgYellowBox.png) repeat-y right 0 #ffc600;
+	color: #383838;
+    font: {
+	    weight: bold; 
+	    size: $body-font-size;
+	   }
+	line-height: rem(22);
+    padding: 0;
+    margin-bottom: 54px;
+    
+    ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    
+	    li {
+		    
+		    &:first-child {
+			    p {margin: 0; padding: 0;}
+		    }
+		    
+		    &:last-child {
+			    margin: 15px;
+			    min-height: 200px;
+		    }
+	    }
+    }
+}
+
+
 // Blue Bg Content
 
 .blueBg {
 	
+	.container {
+		padding-bottom: 64px;
+		padding-top: 54px;
+		margin-bottom: 28px;
+	
+
+		&:empty {
+			margin: 0;
+			padding: 0;
+		}
+
+	}
+	
 	article {
 		@include span-columns(3);
+		position: relative;
+		padding-left: rem(50);
 		
 		@media (max-width: $small-breakpoint ) {
 				width: 100%;

@@ -86,6 +86,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/image\/bgYellowBox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18681,
+		"inputAbbreviatedPath": "\/image\/bgYellowBox.png",
+		"outputAbbreviatedPath": "\/image\/bgYellowBox.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/image\/body.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -93,6 +104,28 @@
 		"initialSize": 24128,
 		"inputAbbreviatedPath": "\/image\/body.jpg",
 		"outputAbbreviatedPath": "\/image\/body.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/Fostering_a_Love_for_Israel_and_Federation_photo_2_resize508__1_1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70212,
+		"inputAbbreviatedPath": "\/image\/Fostering_a_Love_for_Israel_and_Federation_photo_2_resize508__1_1.jpg",
+		"outputAbbreviatedPath": "\/image\/Fostering_a_Love_for_Israel_and_Federation_photo_2_resize508__1_1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/IMG_6580_resize508__1_1.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49964,
+		"inputAbbreviatedPath": "\/image\/IMG_6580_resize508__1_1.JPG",
+		"outputAbbreviatedPath": "\/image\/IMG_6580_resize508__1_1.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -115,6 +148,17 @@
 		"initialSize": 2494,
 		"inputAbbreviatedPath": "\/image\/logoFooter.png",
 		"outputAbbreviatedPath": "\/image\/logoFooter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/woman_fedweb1_resize508__1_1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46625,
+		"inputAbbreviatedPath": "\/image\/woman_fedweb1_resize508__1_1.jpg",
+		"outputAbbreviatedPath": "\/image\/woman_fedweb1_resize508__1_1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

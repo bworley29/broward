@@ -4818,12 +4818,6 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
   .wrapper.blueBg {
     position: relative;
     background-color: #2e5a98; }
-    .wrapper.blueBg .container {
-      padding-bottom: 64px;
-      margin-bottom: 28px; }
-      .wrapper.blueBg .container:empty {
-        margin: 0;
-        padding: 0; }
     .wrapper.blueBg::before {
       content: "";
       height: 4px;
@@ -4929,11 +4923,71 @@ header {
         .mainContent article.halfWidth {
           width: 100%; } }
 
-.blueBg article {
+.callOutBoxFull {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .callOutBoxFull:last-child {
+    margin-right: 0; }
+
+.callOutBoxHalf {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  .callOutBoxHalf:last-child {
+    margin-right: 0; }
+
+.callOutBoxThird {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%; }
+  .callOutBoxThird:last-child {
+    margin-right: 0; }
+
+.callOutBoxFourth {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
   width: 23.2317613015%; }
+  .callOutBoxFourth:last-child {
+    margin-right: 0; }
+
+[class*="callOutBox"] {
+  background: url(../image/bgYellowBox.png) repeat-y right 0 #ffc600;
+  color: #383838;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  padding: 0;
+  margin-bottom: 54px; }
+  [class*="callOutBox"] ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    [class*="callOutBox"] ul li:first-child p {
+      margin: 0;
+      padding: 0; }
+    [class*="callOutBox"] ul li:last-child {
+      margin: 15px;
+      min-height: 200px; }
+
+.blueBg .container {
+  padding-bottom: 64px;
+  padding-top: 54px;
+  margin-bottom: 28px; }
+  .blueBg .container:empty {
+    margin: 0;
+    padding: 0; }
+.blueBg article {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 23.2317613015%;
+  position: relative;
+  padding-left: 3.125rem; }
   .blueBg article:last-child {
     margin-right: 0; }
   @media (max-width: 47.9375em) {
@@ -5605,14 +5659,12 @@ h1, *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.Login
     width: 100%; }
 
 h2, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.EventSectionHeader, *.FRDonorListSetCaption, *.FRCommentsFieldSet .FRFieldSetCaption, *.ECardWizardHeading, *.UpcomingEventTitle, *.RecentEventTitle, *.SearchFormTable .SearchFormTitle, *.CHFormTitle, *.NCC_Forms_Title, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.PostChannelStoryFormTitle, *.ReportsLandingTable caption, *.SearchJobHeading, *.JobResultsHeading, *.ClassPageHeaderClassName, *.UPMPartEditToolbarTitle, *.myHomeBox th, *.SearchJobHeading, *.PostJobHeading, *.PostDiscussionTopicHeadingCell, .AdditionalDonation_Heading, .Ev2_SummaryHeader, .Ev2_RegistrantAddressHeader label, .Ev2_RegistrantHeader, .EventItemTitleDescription, .EventTicketsHeaderCell {
-  font-size: 0.875rem;
-  line-height: 1.4375rem;
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
   background: transparent;
   margin-bottom: 0;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  padding-top: 15px;
-  text-transform: uppercase !important;
   background: inherit;
   font-family: "Oswald", sans-serif;
   height: auto; }
@@ -5724,9 +5776,9 @@ footer .social a {
 ----------------------------------------------*/
 p, table.BBListingTable p {
   padding: 0;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.5rem;
   line-height: 1.4375rem;
-  color: #4f4f4f;
+  color: #272727;
   font-family: "Merriweather", serif;
   font-size: 0.875rem;
   font-weight: 400;
@@ -5755,6 +5807,23 @@ p, table.BBListingTable p {
     text-decoration: none;
     padding: 0 3px; }
 
+[class*="callOutBox"] h4 {
+  color: #262626;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 20px;
+  max-height: 60px;
+  padding: 0;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  font-weight: 400; }
+[class*="callOutBox"] p {
+  clear: both;
+  margin-bottom: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700; }
+
 .blueBg h1, .blueBg h2, .blueBg h3, .blueBg h4, .blueBg h5, .blueBg h6, .blueBg p, .blueBg a, .blueBg li, .blueBg dd, .blueBg [class*="icon"] {
   color: #fff; }
 .blueBg [class*="icon"] {
@@ -5773,7 +5842,26 @@ p, table.BBListingTable p {
   line-height: 1;
   text-align: center;
   margin: 15px auto;
+  padding-bottom: 54px;
   text-transform: uppercase; }
+.blueBg h4 {
+  color: #fff;
+  font-size: 21px;
+  line-height: 27px;
+  margin-bottom: 8px;
+  text-transform: uppercase; }
+.blueBg p {
+  color: #a9d1fa;
+  font-weight: 600; }
+.blueBg [class*="icon"] {
+  font-size: 33px;
+  height: 33px;
+  line-height: 45px;
+  margin-bottom: 15px;
+  top: 2px;
+  width: 36px;
+  position: absolute;
+  left: 0; }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer a {
   color: #efede9;
