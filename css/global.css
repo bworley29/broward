@@ -4765,7 +4765,7 @@ table.BBFormTable .BBFormTitle.BBNotesTitle {
 	/*=========================================================================================
                      ::3. PAGE LAYOUT & STRUCTURE
 ==========================================================================================*/
-body {
+body#BodyId.AdminPageBody {
   background-color: #fff; }
 
 body#BodyId {
@@ -4804,7 +4804,7 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
   .wrapper.nav {
     background: url("../image/bgMainNav.png") no-repeat center center/100% auto transparent;
     position: relative;
-    z-index: 20; }
+    z-index: 3; }
     .wrapper.nav:before {
       background: url("../image/bgGlow.png") no-repeat center center/100% auto transparent;
       content: "";
@@ -4847,12 +4847,15 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  z-index: 4; }
   .container:before, .container:after {
     content: "";
     display: table; }
   .container:after {
     clear: both; }
+  .container.mainContent {
+    z-index: 2; }
 
 /*---------------------------------------------
                      ::3.2.1 Header
@@ -4893,35 +4896,36 @@ header {
 /*---------------------------------------------
                      ::3.2.4 Main Content
 ----------------------------------------------*/
-.mainContent {
+.mainContent:empty {
+  margin: 0;
+  padding: 0; }
+.mainContent article {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  margin-right: 0;
   padding: 28px 0; }
-  .mainContent:empty {
-    margin: 0;
+  .mainContent article:last-child {
+    margin-right: 0; }
+  .mainContent article:empty {
     padding: 0; }
-  .mainContent article {
+  .mainContent article.halfWidth {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 100%;
-    margin-right: 0; }
-    .mainContent article:last-child {
+    width: 48.821174201%;
+    padding: 28px 0; }
+    .mainContent article.halfWidth:last-child {
       margin-right: 0; }
-    .mainContent article.halfWidth {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 48.821174201%;
-      padding: 28px 0; }
-      .mainContent article.halfWidth:last-child {
-        margin-right: 0; }
-      .mainContent article.halfWidth:empty {
-        margin: 0;
-        padding: 0; }
-      .mainContent article.halfWidth.last {
-        margin-right: 0; }
-      @media (max-width: 47.9375em) {
-        .mainContent article.halfWidth {
-          width: 100%; } }
+    .mainContent article.halfWidth:empty {
+      margin: 0;
+      padding: 0; }
+    .mainContent article.halfWidth.last {
+      margin-right: 0; }
+    @media (max-width: 47.9375em) {
+      .mainContent article.halfWidth {
+        width: 100%; } }
 
 .callOutBoxFull {
   float: left;
@@ -4977,10 +4981,8 @@ header {
 .blueBg .container {
   padding-bottom: 64px;
   padding-top: 54px;
-  margin-bottom: 28px; }
-  .blueBg .container:empty {
-    margin: 0;
-    padding: 0; }
+  margin-bottom: 28px;
+  z-index: 3; }
 .blueBg article {
   float: left;
   display: block;
@@ -5829,7 +5831,7 @@ p, table.BBListingTable p {
 .blueBg [class*="icon"] {
   font-size: 33px;
   height: 33px;
-  line-height: 45px;
+  line-height: 1;
   margin-bottom: 15px;
   top: 2px;
   width: 36px;

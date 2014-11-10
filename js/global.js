@@ -1,7 +1,7 @@
 /**********************************************
  Blackbaud Design Custom JavaScript
 ***********************************************
- Client: GRCF
+ Client: JFED Broward County
  Author(s): Ben Worley
  Product(s): BBNC
  Created: October 2014
@@ -14,29 +14,29 @@
 
 BBI = {
 
-	GRCF: {
+	JFEDBC: {
 
 		bbnc: {
 
 			pageLoad: function(){
 			
-				BBI.GRCF.bbnc.desktop();
-				BBI.GRCF.bbnc.mobile.mobileToggles();
-				BBI.GRCF.bbnc.tinyMceOptions();
+				BBI.JFEDBC.bbnc.desktop();
+				BBI.JFEDBC.bbnc.mobile.mobileToggles();
+				BBI.JFEDBC.bbnc.tinyMceOptions();
 			}, 	
 			
 			paneRefresh: function(){
-				BBI.GRCF.bbnc.parts.mainMenuPart();
-				BBI.GRCF.bbnc.parts.utilityMenuPart();
-				BBI.GRCF.bbnc.parts.userLogin();
-				BBI.GRCF.bbnc.parts.breadcrumbs();
-				BBI.GRCF.bbnc.parts.accordionContent();
-				BBI.GRCF.bbnc.parts.donateRecurringEndDate();
-				BBI.GRCF.bbnc.parts.quickSearch();
-				BBI.GRCF.bbnc.parts.commFoundParts();
-				BBI.GRCF.bbnc.mobile.eventRegCart();
-				BBI.GRCF.bbnc.addClassToEmptyTableCells();
-				BBI.GRCF.bbnc.addClassToRequiredInputs();
+				BBI.JFEDBC.bbnc.parts.mainMenuPart();
+				BBI.JFEDBC.bbnc.parts.utilityMenuPart();
+				BBI.JFEDBC.bbnc.parts.userLogin();
+				BBI.JFEDBC.bbnc.parts.breadcrumbs();
+				BBI.JFEDBC.bbnc.parts.accordionContent();
+				BBI.JFEDBC.bbnc.parts.donateRecurringEndDate();
+				BBI.JFEDBC.bbnc.parts.quickSearch();
+				BBI.JFEDBC.bbnc.parts.commFoundParts();
+				BBI.JFEDBC.bbnc.mobile.eventRegCart();
+				BBI.JFEDBC.bbnc.addClassToEmptyTableCells();
+				BBI.JFEDBC.bbnc.addClassToRequiredInputs();
 			}, 	
 			
 			// Desktop
@@ -58,7 +58,18 @@ BBI = {
 				
 				//
 				$('label.QuickSearchFieldCaption').parent().hide();
-
+				
+				//
+				/*
+$('.blueBg').each(function(){
+					if($(this).find.closest('.container').is(':empty').length === 0) {
+					  $(this).addClass('allChildrenEmpty');
+					} else  {
+						$(this).removeClass('allChildrenEmpty');
+					}
+				});
+*/
+					
 			    								
 			},
 			
@@ -347,7 +358,7 @@ BBI = {
 					var breadcrumbHomeLink;
 					
 					// Create Home link for Breadcrumbs
-					breadcrumbHomeLink = $('<li class="home"><a href="http://www.GRCFenver.edu/" target="_new">MSU Denver Alumni Association</a></li>');
+					breadcrumbHomeLink = $('<li class="home"><a href="http://www.JFEDBCenver.edu/" target="_new">MSU Denver Alumni Association</a></li>');
 					
 					// Create Home Breadcrumb link if it doesn't already exist
 					if($('nav.wrapBreadcrumbs ul.mainNav li.home').length === 0) {
@@ -383,8 +394,8 @@ BBI = {
 						$('tr[id$="trSignInBody"]').closest('table').addClass('userLoginPart');
 	
 						//nice treatment for checkboxes from mobile devices
-						//BBI.GRCF.bbnc.responsiveCheckboxesAddClass();
-						//BBI.GRCF.bbnc.responsiveCheckboxesChangeEvent();
+						//BBI.JFEDBC.bbnc.responsiveCheckboxesAddClass();
+						//BBI.JFEDBC.bbnc.responsiveCheckboxesChangeEvent();
 	
 					}
 					
@@ -409,7 +420,7 @@ BBI = {
 
 		}
 
-	} // end GRCF
+	} // end JFEDBC
 
 }; // end BBI
 
@@ -434,19 +445,19 @@ BBI = {
 
 // Functions to run each time the page loads
 $(document).ready( function(){
-	BBI.GRCF.bbnc.pageLoad();
+	BBI.JFEDBC.bbnc.pageLoad();
 });
 
 // Functions to run each time the pane is refreshed
 try {
      Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function() {
-           BBI.GRCF.bbnc.paneRefresh();
+           BBI.JFEDBC.bbnc.paneRefresh();
      });
 }
 catch(err) {
      console.log('Sys is probably undefined');
      $(document).ready( function(){
-           BBI.GRCF.bbnc.paneRefresh();
+           BBI.JFEDBC.bbnc.paneRefresh();
      });
 }
 

@@ -2,11 +2,14 @@
                      ::3. PAGE LAYOUT & STRUCTURE
 ==========================================================================================*/
 
-body {
+body#BodyId.AdminPageBody {
 	background-color: #fff;
+	
 }
 	
-body#BodyId { background: #f3f1e6 url('../image/body.jpg') repeat; }
+body#BodyId {
+	background: #f3f1e6 url('../image/body.jpg') repeat;
+}
 
 
 
@@ -64,7 +67,7 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 	&.nav { 
 		background: url('../image/bgMainNav.png') no-repeat center center / 100% auto transparent;
 		position: relative;
-		z-index: 20;
+		z-index: 3;
 		
 		&:before {
 			background: url('../image/bgGlow.png') no-repeat center center / 100% auto transparent;
@@ -125,6 +128,9 @@ form[action*="pagedesign.aspx"] .container *::before, form[action*="pagedesign.a
 	@include outer-container;
 	position: relative;
 	width: 100%;
+	z-index: 4;
+	
+	&.mainContent {z-index: 2;}
 }
 
 
@@ -192,13 +198,16 @@ header {
 ----------------------------------------------*/
 
 .mainContent {
-	padding: 28px 0;
 	
 	&:empty {margin: 0; padding: 0;}
 	
 	article {
 		@include span-columns(12);
 		@include omega;
+		padding: 28px 0;
+		
+		&:empty { padding: 0; }
+		
 		&.halfWidth {
 			@include span-columns(6);
 			padding: 28px 0;
@@ -266,17 +275,12 @@ header {
 // Blue Bg Content
 
 .blueBg {
-	
+
 	.container {
 		padding-bottom: 64px;
 		padding-top: 54px;
 		margin-bottom: 28px;
-	
-
-		&:empty {
-			margin: 0;
-			padding: 0;
-		}
+		z-index: 3;
 
 	}
 	
@@ -289,6 +293,7 @@ header {
 				width: 100%;
 			}
 	}
+
 }
 
 /*---------------------------------------------
