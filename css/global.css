@@ -887,9 +887,9 @@ table.BBFormTable.PostJobFormTable {
     right: -23px;
     top: -16px;
     z-index: 100;
-    font-family: "SSPika";
+    font-family: "FontAwesome";
     content: '\f0da';
-    color: #47bddb; }
+    color: #0252aa; }
   .BBSequenceMapCurrentStep:last-child::after {
     content: '';
     display: none; }
@@ -978,16 +978,16 @@ table.BBFormTable.PostJobFormTable {
   border-color: #4f4f4f; }
 
 .BBCalendar:active {
-  color: #47bddb; }
+  color: #0252aa; }
 
 .BBCalendar:hover {
-  color: #47bddb; }
+  color: #0252aa; }
 
 .BBCalendar:link {
-  color: #47bddb; }
+  color: #0252aa; }
 
 .BBCalendar:visited {
-  color: #47bddb; }
+  color: #0252aa; }
 
 .BBCalendarDayHeader {
   background-color: #686764;
@@ -1067,15 +1067,15 @@ table.BBFormTable.PostJobFormTable {
   line-height: 1.5rem; }
 
 .PagedListFooterLink:hover {
-  color: #47bddb;
+  color: #0252aa;
   text-decoration: underline; }
 
 .PagedListFooterLink:link {
-  color: #47bddb;
+  color: #0252aa;
   text-decoration: none; }
 
 .PagedListFooterLink:visited {
-  color: #47bddb;
+  color: #0252aa;
   text-decoration: none; }
 
 .SpellBody {
@@ -1795,7 +1795,7 @@ table.BBFormTable.EventTable {
 
 input[type="button"].BBFormSubmitButton.DiscussionGroupSpellButton {
   margin: 1em;
-  background: #EE2752;
+  background: #749a23;
   border: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2211,9 +2211,9 @@ table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarBut
 table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a.EventCalendarButtons {
   margin-left: 1em; }
   table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a.EventCalendarButtons::before {
-    font-family: "SSPika";
+    font-family: "FontAwesome";
     display: inline-block;
-    color: #EE2752;
+    color: #749a23;
     font-size: 1rem;
     padding-right: .25em;
     position: relative;
@@ -2223,7 +2223,7 @@ table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarBut
 table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a[id*="lbtnNewEvent"] {
   margin-left: 0; }
 table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a.EventCalendarButtons:hover::before {
-  color: #47bddb; }
+  color: #0252aa; }
 table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a[id*="lbtnNewEvent"]::before {
   content: '\f14b'; }
 table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a[id*="lbtnImportEvents"]::before {
@@ -2450,15 +2450,15 @@ table.BBFormTable[summary="Event Calendar"] input[id*="ImageButtonFilterEvents"]
   display: none; }
 table.BBFormTable[summary="Event Calendar"] a[id*="lbtnFilterEvents"]::before {
   content: '\f0b0';
-  font-family: "SSPika";
+  font-family: "FontAwesome";
   display: inline-block;
-  color: #EE2752;
+  color: #749a23;
   font-size: 1rem;
   padding-right: .25em;
   position: relative;
   top: .15em; }
 table.BBFormTable[summary="Event Calendar"] a[id*="lbtnFilterEvents"]:hover::before {
-  color: #47bddb; }
+  color: #0252aa; }
 
 .CalendarViewTodayText {
   white-space: nowrap;
@@ -3145,7 +3145,7 @@ table.BBFormTable.TransactionManagerGrid {
 
 [class*="TransactionManagerGridHeaderCellSorted"]::after {
   display: inline-block;
-  font-family: "SSPika";
+  font-family: "FontAwesome";
   color: #eee;
   padding-left: 1em; }
 
@@ -3417,7 +3417,7 @@ table.BBFormTable.TransactionManagerGrid {
   .TransactionManagerTab a {
     font-weight: 400;
     text-decoration: none;
-    color: #47bddb;
+    color: #0252aa;
     cursor: pointer;
     font-family: "Merriweather", serif; }
 
@@ -3433,12 +3433,12 @@ table.BBFormTable.TransactionManagerGrid {
   .TransactionManagerCurrentTab a {
     font-weight: 400;
     text-decoration: none;
-    color: #47bddb;
+    color: #0252aa;
     cursor: pointer;
     font-family: "Merriweather", serif; }
 
 .TransactionManagerCurrentTabLink {
-  color: #47bddb; }
+  color: #0252aa; }
 
 .TransactionManagerTabLink:visited {
   text-decoration: none; }
@@ -3733,7 +3733,7 @@ input[type="text"].BBFormDisplayTextbox {
   text-decoration: none; }
 
 .BBEventRegSequenceMapCurrentStepItem {
-  background-color: #47bddb;
+  background-color: #0252aa;
   color: #fff; }
 
 .BBEventRegSequenceMapNavigationNextButton {
@@ -3750,7 +3750,7 @@ input[type="text"].BBFormDisplayTextbox {
   cursor: pointer; }
 
 input[type="button"].BBEventRegSequenceMapNavigationPreviousButton {
-  color: #47bddb !important;
+  color: #0252aa !important;
   margin-bottom: 15px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -3963,7 +3963,7 @@ select.Ev2_RegistrantAddressControlDropDown {
   font-size: 0.875rem;
   font-weight: 400;
   text-decoration: none;
-  color: #47bddb;
+  color: #0252aa;
   cursor: pointer;
   font-family: "Merriweather", serif; }
 
@@ -4034,9 +4034,9 @@ select.Ev2_RegistrantAddressControlDropDown {
     margin-left: 0; }
     .Ev2_DateContainer .Ev2_DateLabel::before {
       content: '\f073';
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       font-size: 2rem;
-      color: #EE2752;
+      color: #749a23;
       margin-right: .3em;
       top: .1em;
       position: relative; }
@@ -4050,9 +4050,9 @@ select.Ev2_RegistrantAddressControlDropDown {
   margin-left: 0; }
   .Ev2_RegistrationEventDateContainer .Ev2_RegistrationEventDate::before {
     content: '\f073';
-    font-family: "SSPika";
+    font-family: "FontAwesome";
     font-size: 2rem;
-    color: #EE2752;
+    color: #749a23;
     margin-right: 0.35em;
     top: .1em;
     position: relative; }
@@ -4074,9 +4074,9 @@ select.Ev2_RegistrantAddressControlDropDown {
   padding: 0; }
   .Ev2_TimeLabels::before {
     content: '\f017';
-    font-family: "SSPika";
+    font-family: "FontAwesome";
     font-size: 2rem;
-    color: #EE2752;
+    color: #749a23;
     margin-right: .3em;
     top: .1em;
     position: relative; }
@@ -4090,9 +4090,9 @@ select.Ev2_RegistrantAddressControlDropDown {
   color: #4f4f4f; }
   .Ev2_RegistrationEventTime::before {
     content: '\f017';
-    font-family: "SSPika";
+    font-family: "FontAwesome";
     font-size: 2rem;
-    color: #EE2752;
+    color: #749a23;
     margin-right: 0.35em;
     top: .1em;
     position: relative; }
@@ -4144,7 +4144,7 @@ select.Ev2_RegistrantAddressControlDropDown {
     display: inline-block; }
     .Ev2_DescriptionContainer div[id*="ctlDescription"]:before {
       content: '\f05a';
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       color: #999;
       font-size: 1rem;
       padding-right: 0.35em; }
@@ -4316,7 +4316,7 @@ label.Ev2_PriceName.BBFieldCaption {
     font-weight: 400; }
     .Ev2_OrgRegText label[for*="chkOrgRegistration"]::before {
       content: '\f0f7';
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       display: inline-block;
       padding-right: 0.45em; }
     .Ev2_OrgRegText label[for*="chkOrgRegistration"]:hover {
@@ -4729,8 +4729,8 @@ table.BBFormTable.SearchFormTable {
         border: 1px solid #ccc;
         background-color: #47bddb;
         content: '\f002';
-        color: #EE2752;
-        font-family: "SSPika"; }
+        color: #749a23;
+        font-family: "FontAwesome"; }
   table.BBFormTable.SearchFormTable tr:nth-child(2) table td:nth-child(2) {
     width: 70%; }
     table.BBFormTable.SearchFormTable tr:nth-child(2) table td:nth-child(2) input.SearchTextBox {
@@ -4750,7 +4750,7 @@ table.BBFormTable.SearchFormTable {
     padding-top: 1em; }
     table.BBFormTable.SearchFormTable table.SearchTable a[id*="rpResultList"]::after {
       content: '\f0a9';
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       display: inline-block;
       color: #4f4f4f;
       text-decoration: none;
@@ -4890,9 +4890,22 @@ header {
 /*---------------------------------------------
                      ::3.2.2 Main Nav
 ----------------------------------------------*/
+/*
+.wrapNav {
+
+}
+
+.wrapToggleMainNav {
+}
+*/
 /*---------------------------------------------
                      ::3.2.3 Breadcrumbs
 ----------------------------------------------*/
+/*
+.breadcrumbs {
+
+}
+*/
 /*---------------------------------------------
                      ::3.2.4 Main Content
 ----------------------------------------------*/
@@ -4926,6 +4939,43 @@ header {
     @media (max-width: 47.9375em) {
       .mainContent article.halfWidth {
         width: 100%; } }
+
+.container.homeContent {
+  max-width: none;
+  margin-bottom: 28px; }
+  .container.homeContent article p {
+    margin: 0; }
+  .container.homeContent .homeImgCaptionBar {
+    clear: both;
+    width: 100%;
+    background: url("../image/bgYellowNoise.png") repeat 0 0 transparent;
+    font: 36px/45px "Oswald",sans-serif;
+    color: #2F2D2A;
+    padding: 5px 0px;
+    min-height: 55px; }
+    .container.homeContent .homeImgCaptionBar p {
+      font-size: 2.25rem;
+      line-height: 2.8125rem;
+      color: #272727;
+      display: block;
+      margin: 0 auto;
+      max-width: 900px;
+      font-family: "Oswald",sans-serif; }
+      .container.homeContent .homeImgCaptionBar p a {
+        text-transform: uppercase;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 1.3125rem;
+        line-height: 1.5rem;
+        padding: 5px 10px;
+        color: #FFF;
+        background-color: #3A3A3F;
+        vertical-align: middle;
+        margin-top: -4px;
+        font-family: "Oswald",sans-serif; }
+    .container.homeContent .homeImgCaptionBar:empty {
+      padding: 0;
+      min-height: auto; }
 
 .callOutBoxFull {
   float: left;
@@ -5165,7 +5215,7 @@ a.skip:hover, a.skip:active, a.skip:focus {
     padding: 5px 8px 0;
     position: relative; }
     .utility .socialNav li a {
-      font-family: FontAwesome;
+      font-family: "FontAwesome";
       background-size: 25px 25px;
       width: 25px;
       height: 25px;
@@ -5315,7 +5365,7 @@ nav ul.mainNav {
           display: block !important; } }
     nav ul.mainNav li.parent > a:after {
       content: '\25BE';
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       font-size: 12px;
       line-height: 1;
       position: relative;
@@ -5388,7 +5438,7 @@ nav ul.mainNav {
         display: block !important;
         color: #47bddb; }
         .wrapContent nav.breadcrumbs ul li a.selected:hover {
-          color: #47bddb;
+          color: #0252aa;
           cursor: text; }
         .wrapContent nav.breadcrumbs ul li a.selected:before {
           content: '/';
@@ -5464,7 +5514,7 @@ aside nav ul.mainNav li.selected a.selected {
   font-family: "Oswald", sans-serif; }
   .toggleMainNav:after {
     content: '\f0c9';
-    font-family: "SSPika";
+    font-family: "FontAwesome";
     font-size: 1.5625rem;
     line-height: 1;
     position: relative;
@@ -5716,7 +5766,7 @@ article, aside {
 a, a:visited, a.LoginLink, a.PhotoLink, a.Album_BackToPhotosLink, a.Album_AlbumNameLink, a.Album_AlbumActionItem, a.BBLinkHelpIcon, a.PaymentPartClearLink, a.EventCalendarButtons, a.ListViewEventTitle, a.BBFormDisplayHelpImage, a.DiscussionTopicLink, a.DiscussionSearchLink, a.JobBoardSearchLink, a.JobBoardPostLink, a.JobResultsLink, a.BBNameLink, .BBNameLink:link, .DiscussionTopicLink:link, a.BBNameLink, a.BBVolOpLink, .fc-content a, .fc-content a:visited, a.ChannelStoryDeleteButtonWAI, a.ChannelStoryEditButtonWAI {
   font-weight: 400;
   text-decoration: none;
-  color: #47bddb;
+  color: #0252aa;
   cursor: pointer;
   font-family: "Merriweather", serif;
   -webkit-transition: background 0.3s ease 0s;
@@ -5725,9 +5775,9 @@ a, a:visited, a.LoginLink, a.PhotoLink, a.Album_BackToPhotosLink, a.Album_AlbumN
   transition: background 0.3s ease 0s; }
 
 a h1, a h2, a h3, a h4, a h5, a h6, a p {
-  color: #47bddb; }
+  color: #0252aa; }
   a h1:hover, a h2:hover, a h3:hover, a h4:hover, a h5:hover, a h6:hover, a p:hover {
-    color: #47bddb; }
+    color: #0252aa; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-family: "Oswald", sans-serif; }
@@ -5739,7 +5789,7 @@ a h1, a h2, a h3, a h4, a h5, a h6 {
   color: #fff; }
 
 a:hover, a.LoginLink:hover, a.PhotoLink:hover, a.Album_BackToPhotosLink:hover, a.Album_AlbumNameLink:hover, a.Album_AlbumActionItem:hover, a.BBLinkHelpIcon:hover, a.PaymentPartClearLink:hover, a.EventCalendarButtons:hover, a.ListViewEventTitle:hover, a.BBFormDisplayHelpImage:hover, a.DiscussionTopicLink:hover, a.DiscussionSearchLink:hover, a.JobBoardSearchLink:hover, a.JobBoardPostLink:hover, a.JobResultsLink:hover, .DiscussionTopicLink:hover, .fc-content a:hover {
-  color: #47bddb;
+  color: #0252aa;
   text-decoration: underline; }
 
 footer a.enews:after {
@@ -5863,7 +5913,8 @@ p, table.BBListingTable p {
   top: 2px;
   width: 36px;
   position: absolute;
-  left: 0; }
+  left: 0;
+  font-family: "SSPika"; }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer a {
   color: #efede9;
@@ -6027,9 +6078,6 @@ li p {
     background-image: none;
     padding-left: 0; }
 
-[class*="icon"] {
-  font-family: "SSPika"; }
-
 /*=========================================================================================
                      ::6. Buttons
 ==========================================================================================*/
@@ -6132,7 +6180,7 @@ button.sidebarButton, a.sidebarButton {
   color: #fff;
   padding: .35rem 1.5rem; }
   button.sidebarButton:hover, a.sidebarButton:hover {
-    background: #47bddb; }
+    background: #0252aa; }
 
 /*=========================================================================================
                      ::7. FORMS
@@ -6431,7 +6479,7 @@ img {
   position: relative;
   z-index: 1; }
   .sidebarContent::before, .commTxt::before {
-    font-family: "SSPika";
+    font-family: "FontAwesome";
     content: '\f0d8';
     position: absolute;
     z-index: 200;
@@ -6499,7 +6547,7 @@ table.BBListingTable th, tr.JobResultsListHeader td, tr.BBDocumentDisplayHeaderR
                      ::11.3 Sortable Columns
 ----------------------------------------------*/
 table.BBListingTable th a, tr.BBDocumentDisplayHeaderRow td a {
-  background: #47bddb;
+  background: #0252aa;
   /* $client-color-background */
   color: #FFF;
   /* $client-color-background-invert */
@@ -6510,7 +6558,7 @@ table.BBListingTable th a, tr.BBDocumentDisplayHeaderRow td a {
   margin: 0; }
 
 table.BBListingTable th a:hover, tr.BBDocumentDisplayHeaderRow td a:hover {
-  background: #47bddb;
+  background: #0252aa;
   /* transparentize($client-color-background, 0.5) */
   text-decoration: none; }
 
@@ -6860,7 +6908,7 @@ input[id*=Attributes][type=checkbox] + label {
 .EventItemTitleTime:before {
   content: '\f017';
   display: inline-block;
-  font-family: "SSPika";
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -6905,7 +6953,7 @@ td[id*="rpFileList_EditBtnCell"] {
 [id*="btnAddDocument"]:after {
   content: '\f093';
   display: inline-block;
-  font-family: "SSPika";
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -6913,15 +6961,15 @@ td[id*="rpFileList_EditBtnCell"] {
   font-size: 1.25em;
   color: #fff;
   padding: .25em .65em;
-  background: #EE2752; }
+  background: #749a23; }
 
 [id*="btnAddDocument"]:hover:after {
   color: #fff;
-  background: #d2103a; }
+  background: #55701a; }
 
 a[id*="rpFileList_btnEdit"]:before, a[id*="rpFileList_btnDelete"]:before {
   display: inline-block;
-  font-family: "SSPika";
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: 400;
   line-height: 2.25rem;
@@ -6930,7 +6978,7 @@ a[id*="rpFileList_btnEdit"]:before, a[id*="rpFileList_btnDelete"]:before {
   font-size: 1rem;
   height: auto;
   text-shadow: none;
-  color: #EE2752; }
+  color: #749a23; }
 
 a[id*="rpFileList_btnEdit"]:before {
   content: '\f044'; }
@@ -6941,7 +6989,7 @@ a[id*="rpFileList_btnDelete"]:before {
 a.BBDocumentDisplayHeader:after {
   content: '\f0dc';
   display: inline-block;
-  font-family: "SSPika";
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -6960,13 +7008,13 @@ tr.BBDocumentDisplayHeaderRow + tr td {
 a[id*="rpFileList_FileLink"]:before {
   content: '\f016';
   display: inline-block;
-  font-family: "SSPika";
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1;
   padding-right: .25em;
-  color: #EE2752; }
+  color: #749a23; }
 
 table[id*="tblDocUpload"] tr[id*="trOriginalFile"] td:last-child {
   font-size: 0.875rem;
@@ -6998,7 +7046,7 @@ dl.myHomeProfileDisplay {
     dl.myHomeProfileDisplay dd a:before {
       content: '\f040';
       padding: 0 .3em;
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       display: inline-block; }
     dl.myHomeProfileDisplay dd span:empty {
       display: none; }
@@ -7014,10 +7062,10 @@ ul.myHomeProfileLinks {
     padding: 0; }
     ul.myHomeProfileLinks li a:before {
       content: '\f101';
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       display: inline-block;
       padding-right: .5em;
-      color: #EE2752;
+      color: #749a23;
       font-size: .875rem; }
   ul.myHomeProfileLinks li.myProfile a:before {
     content: '\f007'; }
@@ -7143,7 +7191,7 @@ aside .BBPollsFormTable .BBPollsFormTitle {
   .FSGrid tr:nth-child(even) {
     background-color: #F5F5F5; }
   .FSGrid th {
-    background: #47bddb;
+    background: #0252aa;
     color: #fff; }
     .FSGrid th a {
       color: #fff; }
@@ -7234,11 +7282,11 @@ input.DonorGrantSubmitButton {
     visibility: hidden; }
     [id*="pnlExport"] .DTGrid [id*="lblExport"] a:after {
       content: '\f019';
-      font-family: "SSPika";
+      font-family: "FontAwesome";
       visibility: visible;
       padding: 6px 10px 4px;
       color: #fff;
-      background: #47bddb;
+      background: #0252aa;
       text-align: center;
       position: relative;
       top: -1.25rem; }

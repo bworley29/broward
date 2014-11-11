@@ -70,6 +70,7 @@ $('.blueBg').each(function(){
 				});
 */
 					
+				$('.utility nav ul.taskNav li.mail a').attr('href','#connect');
 			    								
 			},
 			

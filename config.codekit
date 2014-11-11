@@ -106,6 +106,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/image\/bgYellowNoise.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10842,
+		"inputAbbreviatedPath": "\/image\/bgYellowNoise.png",
+		"outputAbbreviatedPath": "\/image\/bgYellowNoise.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/image\/body.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

@@ -176,12 +176,14 @@ header {
                      ::3.2.2 Main Nav
 ----------------------------------------------*/
 
+/*
 .wrapNav {
 
 }
 
 .wrapToggleMainNav {
 }
+*/
 
 
 /*---------------------------------------------
@@ -189,9 +191,11 @@ header {
 ----------------------------------------------*/
 
 
+/*
 .breadcrumbs {
 
 }
+*/
 
 /*---------------------------------------------
                      ::3.2.4 Main Content
@@ -219,6 +223,56 @@ header {
 			@media (max-width: $small-breakpoint ) {
 				width: 100%;
 			}
+		}
+	}
+}
+
+.container.homeContent {
+	max-width: none;
+	margin-bottom: 28px;
+	
+	article {
+		p {margin: 0;}
+	}
+	
+	.homeImgCaptionBar {
+		clear: both;
+		//left: 0px;
+		//top: 425px;
+		width: 100%;
+		background: url("../image/bgYellowNoise.png") repeat 0 0 transparent;
+		font: 36px/45px "Oswald",sans-serif;
+		color: #2F2D2A;
+		padding: 5px 0px;
+		min-height: 55px;
+		
+		p {
+			font-size: rem(36);
+			line-height: rem(45);
+			color: #272727;
+			display: block;
+			margin: 0 auto;
+			max-width: 900px;
+			font-family: "Oswald",sans-serif;
+			
+			a {
+				text-transform: uppercase;
+				border-radius: 5px;
+				display: inline-block;
+				font-size: rem(21);
+				line-height: rem(24);
+				padding: 5px 10px;
+				color: #FFF;
+				background-color: #3A3A3F;
+				vertical-align: middle;
+				margin-top: -4px;
+				font-family: "Oswald",sans-serif;
+			}
+		}
+		
+		&:empty {
+			padding: 0;
+			min-height: auto;
 		}
 	}
 }

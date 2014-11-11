@@ -311,6 +311,7 @@ p, table.BBListingTable p {
 	    width: 36px;
 	    position: absolute;
 	    left: 0;
+	    font-family: "SSPika";
 	}
 }
 
@@ -479,8 +480,3 @@ li p {
 		}
 }
 
-// Font Icons
-
-[class*="icon"] {
-	font-family: $icon-font-family;
-}
