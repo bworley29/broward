@@ -636,7 +636,7 @@ ul.myHomeProfileLinks {
 	font-family: $body-font-family;
 	font-size: $body-font-size;
 	color: $body-font-color;
-	background: #eee;
+	background: #fff;
 	width: 25px;
 	height: 25px;
 	line-height: 21px;
@@ -657,6 +657,8 @@ ul.myHomeProfileLinks {
 		}
 	input[id*="btnExportResults"] {margin-right: 1.25rem;}
 }
+
+.BBFormValidatorSummary.SurveyErrorMessagef { background: transparent; }
 
 /* Survey Print Preview */
 @media (min-width:320px) {
@@ -732,216 +734,98 @@ aside {
 	.QuickSearchButton {display: none !important;}
 }
 
+// News Reader
 
-// CF Parts
-
-.FundSummaryFieldCaption {
-	background: transparent;
-	padding-right: .5em;
-}
-
-.DTGrid {
+table.BBFormTable.NewsReaderFormTable {
 	width: 100%;
-	font: {
-		family: $body-font-family;
-		size: $body-font-size;
-		weight: 400;	
-	}
+	max-width: 476px;
+	border-bottom: 1px solid #b28936;
+	background: url("../image/bgYellowBox.png") repeat-y scroll right 0 #ffc600;
 	
-	input[type="text"] {
-		max-width: 250px;
-		width: auto;
-	}
-	
-	input[type="submit"] { margin:0 0 0 .5em; }	
-}
-
-.FSGrid {
-	width: 100%;
-	font: {
-		family: $body-font-family;
-		size: $body-font-size;
-		weight: 400;	
-	}
-	
-	tr:nth-child(even) {
-		background-color: #F5F5F5;
-	}
-	th {
-		background: $link-color;
-		color: #fff;
+	.BBFormTitle.NewsReaderFormTitle {
 		
-		a {
-			color: #fff;
-		}
+		background: none repeat scroll 0 0 #3a3a3f;
+	    color: #fff;
+	    font-family: "Oswald",sans-serif;
+	    font-size: 36px;
+	    line-height: 38px;
+	    margin-bottom: 0;
+	    padding: 10px 16px;
+	    text-transform: uppercase;
+			
+		& + td + td {display: none;}		
 	}
 	
-	td {
-		
-		&:empty {
-			padding: 0;
-		}
-	}
-	
-	tr.BBListEvenRowStyle > td, tr:nth-child(even) > td.BBListingItem {background-color: transparent; }
-}
-
-div[id*="Details_pnlUserSize"] + b {
-	margin-bottom: .75em;
-	display: inline-block;
-	font: {
-		family: $body-font-family;
-		size: $body-font-size;
-	}
-}
-
-.FundSummaryFieldControlCell input + label {
-	padding-right: 1rem;
-	padding-left: .5em;
-	display: inline-block;
-}
-
-.FundSummaryFieldControlCell:empty {padding: 0;}
-
-select.FundSummaryCaptureSelectList {max-width: 325px;}
-
-.DonorGrantFieldCaption {
-	background-color: transparent;
-	width: 40%;
-	white-space: normal;
-}
-
-input.DonorGrantSubmitButton + input.DonorGrantSubmitButton { margin: 1rem; } 
-
-input.DonorGrantSubmitButton {
-	margin-right: 2.5rem !important;
-	
-	&:last-child { margin-right: 0 !important; }
-}
-
-// Class added with JavaScript
-.tableWrapper {
-	width: 100%;
-	position: relative;
-	
-	.DonorGrantFieldCaption, .FundSummaryFieldCaption { width: 33%; }
-	
-	[id*="pnlAlphaSelect"] {
-		text-align: left;
-	}
-	
-	input[type="submit"][name*="btnDelete"].DonorGrantSubmitButton { background-color: #EE2352; }
-	
-	input[type="submit"][name*="btnCancel"].DonorGrantSubmitButton { @extend .defaultButton; background: #ccc; color: #000; }
-	
-	.emptyTD {display: none;}
-}
-
-.DAGRGrid {
-	position: relative;
-	width: 100%;
-	
-	input[type="text"] {
-		padding: .6% 1%;
-		margin-bottom: 1.5rem;
-	}
-	
-	input[type="submit"] {
-		vertical-align: top;
-	}
-	
-	th {
-		@extend .TransactionManagerGridHeaderCell;
-		text-align: left;
-		
-		a {color: inherit;}
-		
-		&.money {text-align: right;}
-	}
-	
-	td {
-		text-align: left;
-		padding: 0.45em;
-		
-		&.money {text-align: right;}
-	}
-}
-
-.DTGrid {
-	position: relative;
-	input[type="text"] {
-		padding: .6% 1%;
-		margin-bottom: 1.5rem;
-	}
-	
-	input[type="submit"] {
-		vertical-align: top;
-	}
-}
-
-[id*="pnlExport"] .DTGrid [id*="lblExport"] {
-	display: block;
-
-	a {
-		@include imageReplacement;
-		visibility: hidden;
-		
-		&:after {
-			content: '\f019';
-			font-family: $icon-font-family;
-			visibility: visible;
-			padding: 6px 10px 4px;
-			color: #fff;
-			background: $link-color;
-			text-align: center;
-			position: relative;
-			top: -1.25rem;
+	a.NewsReaderItemLink {
+			color: #3a3a3a;
+			font-size: 1rem;
+			line-height: rem(21);
+			font-weight: bold;
+			display: block;
+			padding-bottom: 10px;
 		}
 		
-		&:hover:after {
-			background: darken(#002c64, 5%);
+	.NewsReaderItemDate {
+		font-family: $header-font-family;
+		font-size: rem(14);
+		line-height: rem(24);
+		color: #2e2e2e;
+		font-style: normal;
+	}
+	
+	table.NewsReaderResultsList {
+		
+		td {
+			padding: 20px 12px;
+			border-bottom: 1px solid #b28936;
+			
+			br {display: none;}
+			
 		}
 	}
 }
 
-.DonorGrantListingIntro, .BBListingHeading {
-	background: transparent;
-	border: 0;
-}
-
-.DonorGrantListingIntro {
-	white-space: normal;
-	padding-right: 0;
-	text-align: left;
-	line-height: 1.5;
-	padding-bottom: 1.25rem;
-	font-weight: normal;
-}
-
-.DonorGrantListingHeading {
-	padding-left: 0;
-	padding-right: 0;
-	font-size: rem(20);
-	line-height: rem(40);
-	font-weight: 400;
-}
-
-.DonorGrantListingIntro:empty { display: none;}
-
-.DonorGrantListingHeading {
-	font: {
-		weight:400;
-		style: italic;
-		size: rem(32);
+table.BBFormTable {
+	.DetailEventDetails {
+		border-bottom: 0;
+		background: transparent;
+		padding: 0;
+		
+		p { margin: 0; }
 	}
-	color: #000;
-	font-family: $header-font-family;
-	display: block;
-	line-height: rem(34);
-	padding: rem(20) 0;
 	
-	&:empty {display: none;}
+	.BBFieldCaption.DetailLeft {width: 10%;}
+	
+	.BBFieldControlCell.DetailRight {width: 90%;}
+	
+	.BBFieldControlCell.DetailDateTime {
+		border-bottom: 0;
+		font-weight: bold;
+		padding-bottom: 10px;
+		
+		br {display: none;}
+		
+		span[id*="CalendarEvent1_Label"] {display: block;}
+	}
+	
+	.DetailEventSubtitle {
+		font-weight: bold;
+		font-style: normal;
+	}
 }
 
+.EventCalendarPartContainer table.w100p.BBFormTable {
+	
+	.DetailCaptionContainer {
+		background: none repeat scroll 0 0 #3a3a3f;
+	    color: #fff;
+	    font-family: "Oswald",sans-serif;
+	    font-size: 36px;
+	    line-height: 38px;
+	    margin-bottom: 0;
+	    padding: 10px 16px;
+	    text-transform: uppercase;
+	}
+}
 
-div[id*="pnlDefaultButtonControl"] {margin-top: 1rem;}
+table.BBFormSelectList.DonationCaptureSelectList { background: transparent; margin-bottom: 10px;}

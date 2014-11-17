@@ -11,8 +11,8 @@ cursor: pointer;
 text-decoration:none !important;
 line-height:1;
 padding:0 1em;
-height: auto;
-font-size: em(12);
+height: 33px;
+font-size: rem(13);
 font-weight: 400;
 font-family: $alt-body-font;
 padding: 7px 20px 5px;
@@ -20,14 +20,15 @@ text-transform: uppercase;
 text-align: center;
 vertical-align: middle;
 color: #fff;
-background: #47bddb;
-border: 0;
+background: #00a4e4;
+letter-spacing: 1px;
+border: 1px solid #fff;
 @include border-radius(0);
 }
 
 /* Default Button Hovers */
 input[type="submit"]:hover, input[type="button"]:hover, input.BBFormSubmitButton:hover, button:hover, a.PaymentPart_UpdateCartLink:hover, a.PaymentPart_CartItemRemoveText:hover, a[id$="UpdateLink"]:hover, a[id$="btnInsert"]:hover, a[id$="InsertLink"]:hover, div[id$="pnlAddNew"] a:hover, a.CommandButton:hover, a[id$="ExpandCollapseLinkButton"]:hover, a[id$="NewMessageHyperlink"]:hover, div[id$="MessageView1_ActionsMenu"] a[value="16"]:hover, div[id$="PanelOnlineStatus"]+div+div+div ul li a:hover, table.ProfilePhotoFormTable input[value="Update"]:hover, table.ProfilePhotoFormTable input[value="Remove Photo"]:hover, a[id$="LinkButtonYes"]:hover, input[id$="btnSave"].DonorGrantSubmitButton:hover, input[id$="btnCancel"].DonorGrantSubmitButton:hover, input.QuickSearchButton:hover, a.BBDocumentTabButton:hover, a.BBDocumentEditButtonWAI:hover, a.BBDocumentApproveButtonWAI, a.defaultGoldButton:hover, input.ListViewDateRangeGoButton[type="button"]:hover {
-	background: darken(#002c64, 5%);
+	background: #b7b7b7;
 }
  
 /*---------------------------------------------

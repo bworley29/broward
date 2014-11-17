@@ -7,7 +7,7 @@ $grid-gutter: 1.875em; //30px
 $grid-gutter-medium: 1.375rem; //22px
 $grid-gutter-small: 1.250rem; //20px 
 
-$body-font-family: "Merriweather",serif;
+$body-font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;;
 
 $alt-body-font: "Oswald",sans-serif;
 
@@ -32,10 +32,10 @@ $site-primary-color: $body-font-color;
 $footer-font-color: #ffffff;                 						 
 
 // $site-accent-color - accent color used throughout the site 
-$site-accent-color: #47bddb;                  					
+$site-accent-color: #ffc600;                  					
 
 // $form-header-row-background-color - background color used on form header rows 
-$form-header-row-background-color: #686764;      		 
+$form-header-row-background-color: #3a3a3f;      		 
 
 // $form-header-row-text-color - text color used on form header rows 
 $form-header-row-text-color: $content-primary-background-color;
@@ -76,15 +76,15 @@ $header-font-family: $alt-body-font;
 $header-color: #000;               					    
 
 // $link-color - anchor link color 
-$link-color: #0252aa;                   					 
+$link-color: #00a4e4;                   					 
 
 // $link-hover-color - anchor link hover state color 
-$link-hover-color: $link-color;
+$link-hover-color: #005581;
 
 // $icon-font-base - to use Fontawesome this font family must be used
 $icon-font-family: "FontAwesome";
 
-$icon-button-color-primary: #749a23;
+$icon-button-color-primary: #cdc70d;
 
 //
 $icon-default-padding: 0.35em;

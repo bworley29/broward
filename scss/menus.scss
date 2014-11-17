@@ -54,7 +54,9 @@
 				    font-family: $alt-body-font;
 				    z-index: 2;
 				    
-				    &:hover {text-decoration: none;}
+				    &:hover {
+					    text-decoration: none;
+					}
 				}	
 			}
 
@@ -64,8 +66,8 @@
 	.taskNav {
 					
 		li {
-			background: none repeat scroll 0 0 #749a23;
-		    border-radius: 5px;
+			//background: none repeat scroll 0 0 #749a23;
+			background-color: #e81741;
 		    color: #fff;
 		    line-height: 20px;
 		    padding: 5px 11px 5px 13px;
@@ -83,16 +85,21 @@
 		    	&:hover { 
 				    border-bottom-right-radius: 0;
 				    border-bottom-left-radius: 0;
+				    
+				    &:after {
+					    color: #333;
+				    }
 			    }
 			    
 			    &:after {
-				    content: '\25BE';
-					font-family: "SSPika";
-					font-size: rem(11);
+				    content: '\f0d7';
+					font-family: $icon-font-family;
+					font-size: rem(16);
 					line-height: 1;
 					padding-left: 10px;
 					position: relative;
 					top: -2px;
+					color: #fff;
 				}
 		    }
 		    
@@ -139,12 +146,17 @@
 		    &:hover { 
 			    background-color: #399bcf;
 			    
+			    a {
+				    color: #fff;
+				    text-shadow: 0 0 0 #fff;
+			    }
+			    
 			    ul {
 				    display: block;
 			    }
 			}
 		    
-		    &:last-child { margin-left: 11px; }
+		    &:last-child { margin-left: 18px; }
 		    
 		    
 		}
@@ -152,12 +164,13 @@
 	}
 	
 	.utilityNav {
-		margin:2px 0 0 15px;
+		margin:2px 15px 0;
 		z-index: 40;
 		
 		li {
 			a {
-				color: #454545;
+				//color: #454545;
+				color: #6c6c6c;
 				font-size: rem(14);
 				line-height: rem(23);
 				
@@ -204,45 +217,46 @@
 				height: 25px;
 				color: #fff;
 				border-radius: 2rem;
-				background-color: #333;
+				//background-color: #333;
+				background-color: #6c6c6c;
 				vertical-align: top;
 				text-align: center;
 				line-height: 1;
 				font-size: 16px;
 				padding: 4px 0 0 5px;
 				
-				&[class*="instagram"] {
+				&[class*="instagram"]:hover {
 					background-color: $instagram;
 				}
 				
-				&[class*="twitter"] {
+				&[class*="twitter"]:hover {
 					margin-left: 6px;
 					background-color: $twitter;
 				}
 
-				&[class*="google"] {
+				&[class*="google"]:hover {
 					background-color: $googleplus;
 				}
 				
-				&[class*="facebook"] {
+				&[class*="facebook"]:hover {
 					margin-left: 6px;
 					background-color: $facebook;
 				}
 				
-				&[class*="flickr"] {
+				&[class*="flickr"]:hover {
 					margin-left: 6px;
 					background-color: $flickr;
 				}
 				
-				&[class*="you"] {
+				&[class*="you"]:hover {
 					background-color: $youtube;
 				}
 				
-				&[class*="linked"] {
+				&[class*="linked"]:hover {
 					background-color: $linkedin;
 				}
 				
-				&:hover { background-color: #333; }
+				//&:hover { background-color: #333; }
 
 			}
 			
@@ -256,14 +270,14 @@
 			}
 			
 			&:after {
-				content: '\25BE';
-				font-family: "SSPika";
-				font-size: rem(11);
+				content: '\f0d7';
+				font-family: $icon-font-family;
+				font-size: rem(16);
 				line-height: 1;
 				padding-left: 0px;
 				position: relative;
 				top: -2px;
-				color: #333;
+				color: #6c6c6c;
 			}
 			
 			&:hover {
@@ -312,7 +326,14 @@ nav ul.mainNav
 	{
 		position: relative;
 		
-		&:hover { > a { background-color: #749a23; color: #fff;} }
+		&:hover {
+			 
+			> a { 
+				//background-color: #749a23; 
+				//color: #fff;
+				color: $link-color;
+			} 
+		}
 
 		a
 		{
@@ -323,13 +344,17 @@ nav ul.mainNav
 			float: left;
 			font-family: $alt-body-font;
 			font-weight: 400;
-			padding:21px 12px 19px;
-			font-size: rem(18);
+			//padding:21px 12px 19px;
+			padding: 0 12px;
+			margin: 21px 0 19px;
+			border-right: 1px solid #565d60;
+			font-size: rem(17);
 			line-height: rem(40);
+			letter-spacing: .75px;
 			//@include transition(background 0.3s ease 0s);
 			&:hover {
 				text-decoration: none;
-				background: #749a23;
+				//background: #749a23;
 			}
 
 		}
@@ -339,13 +364,15 @@ nav ul.mainNav
 			position: absolute;
 			top: 100%;
 			margin: 0;
-			padding: 0;
+			padding: 12px 0;
 			left: 0;
 			float: none;
 			width: auto;
 			width: 184px;
-			background: #749a23;
+			//background: #749a23;
+			background-color: #cfd3d6;
 			z-index: 2;
+			box-shadow: 1px 2px 0 rgba(86, 93, 96, 0.4);
 			
 			
 			li {
@@ -357,23 +384,25 @@ nav ul.mainNav
 				border: 0;
 				
 				a {
-					color: #fff;
+					color: #565d60;
 					font-weight: 400;
-					font-size: rem(16);
+					font-size: rem(14);
 					line-height: rem(24);
 					text-align: left;
 					margin: 0;
-					padding: 5px 11px;
+					padding: 4px 14px;
 					display: block;
 					width: 100%;
 					background: transparent;
 					text-transform: none;
-					border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+					//border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+					border-right: 0;
+					letter-spacing: 1.15px;
 					
 					&:hover {
 						color: #fff;
 						text-decoration: none;
-						background: url('../image/bgMainNav.png') repeat 0 0 #3d3a38;
+						//background: url('../image/bgMainNav.png') repeat 0 0 #3d3a38;
 					}
 					
 				}
@@ -431,6 +460,8 @@ nav ul.mainNav
 			top: -2px;
 			color: #c2c2c2;
 		}
+		
+		&.last > a { border-right: 0; }
 	}
 	
 	@media (max-width: $small-breakpoint) {
@@ -559,10 +590,10 @@ nav.breadcrumbs ul.mainNav a, nav.breadcrumbs ul.mainNav .parent.selected ul li 
                      ::4.4 Sidebar Navigation
 ----------------------------------------------*/
 
-aside nav ul.mainNav {
+aside nav ul {
 	@extend .menuReset;
-	width: 100%;
-	float: left;
+	width: auto;
+	margin: 20px 30px;
 	
 	li {
 		width: 100%;
@@ -600,11 +631,13 @@ aside nav ul.mainNav {
 				
 				li {
 				
-					border-bottom:1px solid #c6c2ba;
-					padding:4px 0;
+					padding:0 0 12px;
 				
 					a {
 						display: block;
+						color: #fff;
+						letter-spacing: 1px;
+						font-size: 0.875rem;
 					}
 					
 					ul {
@@ -799,4 +832,73 @@ footer ul.socialIcons li a:before {
 footer ul.socialIcons li a:hover:before {
 	background-color: #ccc;
 	color: $body-font-color;
+}
+
+
+footer {
+		.socialNav {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		list-style: none;
+		width: 200px;
+		top: 60px;
+		right: 0;
+		
+		
+		li {
+			position: relative;
+			
+			a {
+				font-family: $icon-font-family;
+				background-size: 35px 35px;
+				width: 35px;
+				height: 35px;
+				color: #fff;
+				border-radius: 2rem;
+				//background-color: #333;
+				background-color: #3e4a4f;
+				vertical-align: top;
+				text-decoration: none;
+				text-align: center;
+				line-height: 1;
+				font-size: 22px;
+				padding: 7px 0 0 6px;
+				margin: 0 0 20px 10px;
+				
+				&[class*="instagram"]:hover {
+					background-color: $instagram;
+				}
+				
+				&[class*="twitter"]:hover {
+					background-color: $twitter;
+				}
+
+				&[class*="google"]:hover {
+					background-color: $googleplus;
+				}
+				
+				&[class*="facebook"]:hover {
+					background-color: $facebook;
+				}
+				
+				&[class*="flickr"]:hover {
+					background-color: $flickr;
+				}
+				
+				&[class*="you"]:hover {
+					background-color: $youtube;
+				}
+				
+				&[class*="linked"]:hover {
+					background-color: $linkedin;
+				}
+				
+				//&:hover { background-color: #333; }
+
+			}
+			
+		}
+	}
+
 }

@@ -430,7 +430,7 @@ table.BBFormTable.PostJobFormTable {width: 100%;}
 .BBFormValidatorSummary {
 	color: $body-font-color;
 	text-align:left;
-	background: #efefef;
+	background: transparent;
 	padding: .5rem;
 	
 	ul {
@@ -1860,11 +1860,13 @@ a.ChannelStoryEditButtonWAI {
 }
 
 .SurveyAnswerTableHeaderRow {
-	background-color:#a9a9a9;
+	background-color:$form-header-row-background-color;
+	color: #fff;
 }
 
 .SurveyResponseTableHeaderRow {
-	background-color:#a9a9a9;
+	background-color:$form-header-row-background-color;
+	color: #fff;
 }
 
 .SurveyTestModeMessage {
@@ -1919,7 +1921,7 @@ table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarBut
 			font-size: 1rem;
 			padding-right:.25em;
 			position: relative;
-			top: .15em;
+			top: 0;
 		}
 		&:first-child {margin-left: 0;}
 	}
@@ -1958,11 +1960,13 @@ a.EventCalendarButtons {
 }
 
 .CalendarViewDayHeader {
-	background-color:$form-header-row-background-color;
+	background-color:#3a3a3f;
 	color:$content-primary-background-color;
-	height:1px;
+	height:auto;
 	font-weight:400;
-	font-size: $body-font-size;
+	font-size: 1rem;
+	font-family: $alt-body-font;
+	padding: 10px 0;
 }
 
 .CalendarViewOtherMonthDay {
@@ -1993,6 +1997,7 @@ a.EventCalendarButtons {
 
 .ListViewEventSubtitle {
 	vertical-align:top;
+	color: $body-font-color;
 }
 
 .ListViewEventLocation {
@@ -2028,7 +2033,7 @@ a.EventCalendarButtons {
 }
 
 .CalendarViewAllDayEvent {
-	border:1px dotted $site-accent-color;
+	border:1px dashed $link-color;
 	margin-bottom:10px;
 }
 
@@ -2038,8 +2043,7 @@ a.EventCalendarButtons {
 
 .CalendarViewEvent {
 	margin-bottom:10px;
-	font-weight: 300;
-	font-size: .688rem;
+	font-size: $body-font-size;
 }
 
 .CalendarFilterContainer {
@@ -2123,12 +2127,13 @@ table[id*="CalendarEvent1_rblMapLink"] input[type="radio"] + label {
 
 .ListViewTopGap {
 	padding-top:5px;
+	padding-bottom: 15px;
 	
 	div > table {
 		width: 100%;
 		
 		tr:first-child td:first-child {
-			width: 38%;
+			width: 25%;
 			
 			label[for*="EventCalendar1_ddlDateRange"] {
 				float: left;
@@ -2149,10 +2154,11 @@ table[id*="CalendarEvent1_rblMapLink"] input[type="radio"] + label {
 }
 
 .ListViewEventDivider {
-	margin-bottom:10px;
+	margin-bottom:15px;
+	display: block;
 }
 
-.CalendarViewCalendarContainer { border-color: $form-header-row-background-color; }
+.CalendarViewCalendarContainer { border-color: $form-header-row-background-color; background-color: #f8f8f8; }
 
 .CalendarViewContainer {
 	width:100%;
@@ -2207,7 +2213,7 @@ table.BBFormTable[summary="Event Calendar"] {
 		font-size: 1rem;
 		padding-right:.25em;
 		position: relative;
-		top: .15em;
+		top: 0;
 	}
 	a[id*="lbtnFilterEvents"]:hover::before { color:$link-hover-color; }
 }
@@ -3370,7 +3376,7 @@ table.BBFormTable.TransactionManagerGrid {
 
 .TransactionManagerTabsContainer {
 	clear:both;
-	background-color: $form-header-row-background-color-alt;
+	background-color: transparent;
 	border-color:#EBEBEB #EBEBEB #ccc;
 	border-style:solid;
 	border-width:1px;
@@ -4036,6 +4042,7 @@ select.Ev2_RegistrantInput.Ev2_RegistrantDropDown.Ev2_RegistrantAddressControlDr
 }
 
 .Ev2_RegistrantContent input[type="text"] {
+	height: auto;
 }
 
 .Ev2_RegistrantContent textarea {
@@ -4438,10 +4445,14 @@ label.Ev2_PriceName.BBFieldCaption {
 }
 
 .Ev2_OrgRegContainer {
-	width:auto;
+	width:100%;
 	float:left;
 	display:inline-block;
 	position: relative;
+	background-color: transparent;
+	border: 0;
+	height: auto;
+	margin-right: 0;
 }
 
 .Ev2_OrgRegText {
@@ -4452,8 +4463,10 @@ label.Ev2_PriceName.BBFieldCaption {
 		display: none;
 	}
 	label[for*="chkOrgRegistration"] {
+		width: 240px;
 		display: block;
 		position: relative;
+		border: 1px solid #F7F7F7;
 		background: #efefef; /* Old browsers */
 background: -moz-linear-gradient(top,  #efefef 0%, #f7f7f7 50%, #f4f4f4 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(50%,#f7f7f7), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
