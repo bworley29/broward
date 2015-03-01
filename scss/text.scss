@@ -433,13 +433,19 @@ ul, ol {
 	
 }
 
-.wrapContent ul, .wrapContent ol
+.mainContent ul, .mainContent ol
 {
+	
+	li {
+		font-size: $body-font-size;
+	}
+	
 	padding: 0 0 0 1.15em;
-	font-weight: 300;
+	font-weight: normal;
 	ul, ol {
 		padding-top: .75em;
 		padding-bottom: .75em;
+		
 	}
 }
 ul {

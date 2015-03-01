@@ -1960,7 +1960,7 @@ a.EventCalendarButtons {
 }
 
 .CalendarViewDayHeader {
-	background-color:#3a3a3f;
+	background-color: #686d6f;
 	color:$content-primary-background-color;
 	height:auto;
 	font-weight:400;
@@ -2027,9 +2027,11 @@ a.EventCalendarButtons {
 .CalendarViewToday {
 	border:1px solid $site-accent-color;
 	background-color:$site-accent-color;
-	color:$body-font-color;
+	color: #fff;
 	font-weight: 700;
 	width:3%;
+	
+	a { color: #fff; text-decoration: underline;}
 }
 
 .CalendarViewAllDayEvent {

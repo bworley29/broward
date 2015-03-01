@@ -383,6 +383,12 @@ aside {
 	margin-top: 40px;
 	padding-bottom:  20px;
 	background-color: #686d6f;
+	
+	h1, h2, h3, h4, h5, h6, p {
+		padding:0 30px;
+	}
+	
+	p { color: #fff; }
 }
 
 /*---------------------------------------------

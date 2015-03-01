@@ -33,7 +33,20 @@ table.DonationFormTable {
 	
 	tbody[id*="tbdCart"] tr[id*="trCart"] table.DonationGrid[id*="dgCart"] {margin-top: 1rem;}
 	
-	.emptyTD { display: none; }
+	//.emptyTD { display: none; }
+	
+	[id*="trDesignationOther"] {
+		.emptyTD { display: table-cell; }
+	}
+	
+	.BBFieldCaption.DonationFieldCaption { 
+		white-space: normal; 
+		line-height: 1.3;
+		
+		label {
+			padding: 0;
+		}
+	}
 	
 }
 
@@ -45,6 +58,12 @@ table[id*="tblAmount"] {
 		input[name*="givingLevels"] { margin: 0 10px 13px 0;}
 	}
 }
+
+table.DonationFormTable .DonationListingHeading span, table.DonationFormTable .DonationListingHeading label {
+	display: inline-block;
+}
+
+table.DonationFormTable .DonationListingHeading [id*="chkSendAnECard"] { margin-right: 5px; }
 
 // Shopping Cart Customization
 
@@ -829,3 +848,8 @@ table.BBFormTable {
 }
 
 table.BBFormSelectList.DonationCaptureSelectList { background: transparent; margin-bottom: 10px;}
+
+
+table.BBFormTable[id*="tableMain"][summary="Event Calendar"] td.EventCalendarButtonBar a.EventCalendarButtons {
+	&[id*="lbtnImportEvents"], &[id*="lbtnListView"], &[id*="lbtnPrintView"], &[id*="lbtnExportICal"], &[id*="lbtnRss"] { display: none; }
+}

@@ -590,83 +590,99 @@ nav.breadcrumbs ul.mainNav a, nav.breadcrumbs ul.mainNav .parent.selected ul li 
                      ::4.4 Sidebar Navigation
 ----------------------------------------------*/
 
-aside nav ul {
-	@extend .menuReset;
-	width: auto;
-	margin: 20px 30px;
-	
-	li {
-		width: 100%;
-		float: none;
+aside nav {
+	ul, ul.mainNav {
+		@extend .menuReset;
+		width: auto;
+		margin: 20px 30px;
+		float: left;
+		display: block;
 		
-		a {
-			color: #000;
-			padding: 2px 0;
-			font: {
-				size: rem(13);
-				weight: 400;
-				family: $alt-body-font;
+		li {
+			width: 100%;
+			float: none;
+			
+			a {
+				color: #000;
+				padding: 2px 0;
+				font: {
+					size: rem(13);
+					weight: 400;
+					family: $alt-body-font;
+					}
+				line-height: rem(15.6);
+				display: none;
+				
+				&:hover, &.selected {
+					text-decoration: none;
+					color: #47bddb;
 				}
-			line-height: rem(15.6);
-			display: none;
+			} // END 1st anchor
 			
-			&:hover, &.selected {
-				text-decoration: none;
-				color: #47bddb;
-			}
-		} // END 1st anchor
-		
-		ul {
-			@extend .menuReset;
-			display: none;
-			margin: 0;
-			padding: 0;
-		}
-		
-		&.selected {
-			
-			> ul {
+			ul {
 				@extend .menuReset;
-				display: block;
+				display: none;
+				margin: 0;
+				padding: 0;
+				position: relative;
+				background-color: transparent;
+				width: 100%;
+				box-shadow: none;
+				top: auto;
+				left: auto;
+			}
+			
+			&.selected {
 				
-				li {
+				background-color: transparent;
 				
-					padding:0 0 12px;
+				a { background-color: transparent; }
 				
-					a {
-						display: block;
-						color: #fff;
-						letter-spacing: 1px;
-						font-size: 0.875rem;
-					}
+				> ul {
+					@extend .menuReset;
+					display: block;
 					
-					ul {
-						display: none;
-					}
+					li {
 					
-					&.selected {
-										
-						ul {
+						padding:0 0 12px;
+					
+						a {
 							display: block;
-							margin-left: 25px;
-							
-							li {
-								border-bottom: 0;
-							}
+							color: #fff;
+							letter-spacing: 1px;
+							font-size: 0.875rem;
+							padding: 0;
 						}
 						
-					}  // END 2nd Li.selected
+						ul {
+							display: none;
+						}
+						
+						&.selected {
+											
+							ul {
+								display: block;
+								margin-left: 25px;
+								
+								li {
+									border-bottom: 0;
+								}
+							}
+							
+						}  // END 2nd Li.selected
+						
+					} // END 2nd level Li
 					
-				} // END 2nd level Li
+				} // END 2nd level Ul
 				
-			} // END 2nd level Ul
+			}  // END 1st Li.selected
 			
-		}  // END 1st Li.selected
+		} // END 1st Li
 		
-	} // END 1st Li
-	
-} // END 1st level Ul
-		
+	} // END 1st level Ul
+}
+
+.selected { background-color: transparent !important; }
 		
 
 /*
